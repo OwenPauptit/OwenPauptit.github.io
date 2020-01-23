@@ -26,7 +26,7 @@ With python, I have mostly used the _pygame_ libraries, but have also experiment
 
 - Garden Defence
 
-![image](/Resources/Images/GardenDefenceIcon.ico)
+                                  ![image](/Resources/Images/GardenDefenceIcon.ico)
 
 #### Panda 3D
 
