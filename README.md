@@ -4,11 +4,26 @@
 
 ## Python Projects
 
-With python, I have mostly used the [_pygame_](www.pygame.org) libraries, but have also experimented with some otehr libraries such as the [_Panda3d_](www.panda3d.org) Game Engine.
+With python, I have mostly used the _pygame_ libraries, but have also experimented with some otehr libraries such as the _Panda3d_ Game Engine.
 
 #### Pygame
 
+- Dropper Dodge
+
+- Calculator
+
+- 2048
+
+- Painter
+
+- Snake
+
+- Rain
+
+- Mitosis
+
 - Garden Defence
+
 - Maze Generator
 
 #### Panda 3D
@@ -17,10 +32,12 @@ With python, I have mostly used the [_pygame_](www.pygame.org) libraries, but ha
 
 ## C++ Projects
 
-I  recently started learning C++, and soon after, I started experimenting with the [_SFML_](www.sfml-dev.org) libraries.
+I recently started learning C++, and soon after, I started experimenting with the _SFML_ libraries.
 
 #### SFML
 
 - Flappy Bird
+
 - Pong
-- Nouoghts and Crosses
+
+- Noughts and Crosses
