@@ -22,9 +22,10 @@ With python, I have mostly used the _pygame_ libraries, but have also experiment
 
 - Mitosis
 
-- Garden Defence
-
 - Maze Generator
+
+- Garden Defence
+![image](/Resources/Images/GardenDefenceIcon.ico)
 
 #### Panda 3D
 
