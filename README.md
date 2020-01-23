@@ -4,7 +4,7 @@
 
 ## Python Projects
 
-With python, I have mostly used the [_pygame_](pygame.org) libraries, but have also experimented with some otehr libraries such as the [_Panda3d_](panda3d.org) Game Engine.
+With python, I have mostly used the [_pygame_](www.pygame.org) libraries, but have also experimented with some otehr libraries such as the [_Panda3d_](www.panda3d.org) Game Engine.
 
 #### Pygame
 
@@ -17,7 +17,7 @@ With python, I have mostly used the [_pygame_](pygame.org) libraries, but have a
 
 ## C++ Projects
 
-I  recently started learning C++, and soon after, I started experimenting with the [_SFML_](sfml-dev.org) libraries.
+I  recently started learning C++, and soon after, I started experimenting with the [_SFML_](www.sfml-dev.org) libraries.
 
 #### SFML
 
