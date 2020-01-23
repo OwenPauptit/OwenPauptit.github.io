@@ -1,6 +1,6 @@
 # Owen Pauptit's GitHub
 
-**Here is a collection of all my significant python and C++ projects**
+**I am an A level student studying Computer Science, Physics, Mathematics and Chemistry. I have found a passion for programming, and enjoy creating games as a way to learn programming languages and any respective libraries. I started learning Python (my very first programming language in 2018) and C++ late 2019.**
 
 ## Python Projects
 
@@ -17,7 +17,7 @@ With python, I have mostly used the _pygame_ libraries, but have also experiment
 
 ## C++ Projects
 
-With C++, I have focused on tyyeh SFML libraries.
+I  recently started learning C++, and soon after, I started experimenting with the _SFML_ libraries.
 
 #### SFML
 
