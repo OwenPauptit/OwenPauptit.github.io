@@ -8,6 +8,11 @@ With python, I have mostly used the **pygame** libraries, but have also experime
 
 #### Pygame
 
+- **Garden Defence**
+
+Garden Defence is a tower defence strategy game. Players place different gnomes into the garden to fight the attacking insects. Monoey is earned from killing enemies, and can be used to buy more gnomes or upgrade existing gnomes. 
+
+
 - Dropper Dodge
 
 - Calculator
@@ -23,10 +28,6 @@ With python, I have mostly used the **pygame** libraries, but have also experime
 - Mitosis
 
 - Maze Generator
-
-- Garden Defence
-
-![image](/Resources/Images/GardenDefenceIcon.ico)
 
 #### Panda 3D
 
