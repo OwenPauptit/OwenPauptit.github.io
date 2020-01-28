@@ -4,9 +4,14 @@
 
 ## Python Projects
 
-With python, I have mostly used the _pygame_ libraries, but have also experimented with some otehr libraries such as the _Panda3d_ Game Engine.
+With python, I have mostly used the **pygame** libraries, but have also experimented with some other libraries such as the **Panda3d** Game Engine.
 
 #### Pygame
+
+- **Garden Defence**
+
+Garden Defence is a tower defence strategy game. Players place different gnomes into the garden to fight the attacking insects. Monoey is earned from killing enemies, and can be used to buy more gnomes or upgrade existing gnomes. 
+
 
 - Dropper Dodge
 
@@ -22,8 +27,6 @@ With python, I have mostly used the _pygame_ libraries, but have also experiment
 
 - Mitosis
 
-- Garden Defence
-
 - Maze Generator
 
 #### Panda 3D
@@ -32,7 +35,7 @@ With python, I have mostly used the _pygame_ libraries, but have also experiment
 
 ## C++ Projects
 
-I recently started learning C++, and soon after, I started experimenting with the _SFML_ libraries.
+I recently started learning C++, and soon after, I started experimenting with the **SFML** libraries.
 
 #### SFML
 
