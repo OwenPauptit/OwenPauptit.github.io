@@ -20,6 +20,8 @@ This program generates a maze that the user can then use the arrow keys to navig
 
 The maze generator uses a recursive backtracking algorithm to create the mazes, you can enable/disable several different setitngs as well as modifying values such as the grid size in the set up menu. The set up menu can be accessed after completing any game, and pressing 'S'.
 
+[Download for Windows](/ProgramRepos/Pygame-MazeGenerator/MazeGenerator.zip?raw=true)
+
 - Dropper Dodge
 
 - Calculator
