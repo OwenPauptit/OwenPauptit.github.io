@@ -14,6 +14,11 @@ Garden Defence is a tower defence strategy game. Players place different gnomes 
 
 [Download for Windows](/ProgramRepos/Pygame-GardenDefence/GardenDefence.zip?raw=true)
 
+- **Maze Generator**
+
+This program generates a maze that the user can then use the arrow keys to navigate the player (red) and reach the finish square (green).
+
+The maze generator uses a recursive backtracking algorithm to create the mazes, you can enable/disable several different setitngs as well as modifying values such as the grid size in the set up menu. The set up menu can be accessed after completing any game, and pressing 'S'.
 
 - Dropper Dodge
 
@@ -29,7 +34,6 @@ Garden Defence is a tower defence strategy game. Players place different gnomes 
 
 - Mitosis
 
-- Maze Generator
 
 #### Panda 3D
 
