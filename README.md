@@ -1,4 +1,4 @@
-# Owen Pauptit's GitHub
+# Who am I?
 
 **I am an A level student studying Computer Science, Physics, Mathematics and Chemistry. I have found a passion for programming, and enjoy creating games as a way to learn programming languages and any respective libraries. I started learning Python (my very first programming language in 2018) and C++ late 2019.**
 
