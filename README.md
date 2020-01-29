@@ -49,6 +49,8 @@ I recently started learning C++, and soon after, I started experimenting with th
 
 - Flappy Bird
 
+- Conway's Game of Life
+
 - Pong
 
 - Noughts and Crosses
