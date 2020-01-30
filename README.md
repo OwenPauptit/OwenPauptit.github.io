@@ -78,5 +78,5 @@ I recently started learning C++, and soon after, I started experimenting with th
 >
 >
 >|**[Linked in](https://linkedin.com/in/owen-pauptit/)**|**[GitHub](https://github.com/owenpauptit/)**|
->|:-:|:-:|
+>|:----------------------------------------------------:|:-------------------------------------------:|
 >
