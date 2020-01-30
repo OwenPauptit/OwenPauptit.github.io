@@ -18,6 +18,8 @@ The majority of the game is played using only a mouse (or touchscreen), with the
 
 [Download for Windows](/ProgramRepos/Pygame-GardenDefence/GardenDefence.zip?raw=true "Zip file download for Garden Defence")
 
+---
+
 - **Maze Generator**
 
 This program generates a maze that the user can then use the arrow keys to navigate the player (red) and reach the finish square (green).
@@ -32,9 +34,13 @@ Once the maze has been created, the user can then try to reach the finishing squ
 
 [Download for Windows](/ProgramRepos/Pygame-MazeGenerator/MazeGenerator.zip?raw=true "zip file download for the Maze Generator")
 
+---
+
 - **Snake**
 
 Snake is a simple game in which the player uses the arrow keys to control the snakes movement. The player aims to eat the fruit (indicated by the red square) which causes the snake to grow. The player dies if the snake's head touches it's body or the walls of the game area. There are basic settings window's which allow the user to change the size of the grid, the speed of the snake and the number of fruit.
+
+---
 
 - Calculator
 
