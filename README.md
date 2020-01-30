@@ -22,7 +22,13 @@ The majority of the game is played using only a mouse (or touchscreen), with the
 
 This program generates a maze that the user can then use the arrow keys to navigate the player (red) and reach the finish square (green).
 
-The maze generator uses a recursive backtracking algorithm to create the mazes, you can enable/disable several different setitngs as well as modifying values such as the grid size in the set up menu. The set up menu can be accessed after completing any game, and pressing 'S'.
+The generation part of the program uses a recursive backtracking algorithm to create the maze, which can be viewed when "Show Maze Generation" is selected in the set up menu. 
+
+![image](/ProgramRepos/Pygame-MazeGenerator/PlayingScreenShot.png)
+
+Once the maze has been created, the user can then try to reach the finishing square (indicated by a green square) using the arrow keys on the keyboard. If the user completes the maze, they can choose to play either an easier maze, a harder maze or a maze of the same difficulty. Or, the user can press 'S' to go to the set up menu, where they can manually set the size of the grid.
+
+![image](/ProgramRepos/Pgame-MazeGenerator/GenerationScreenShot.png)
 
 [Download for Windows](/ProgramRepos/Pygame-MazeGenerator/MazeGenerator.zip?raw=true)
 
