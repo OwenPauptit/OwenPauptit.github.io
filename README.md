@@ -54,9 +54,6 @@ Snake is a simple game in which the player uses the arrow keys to control the sn
 
 - Dropper Dodge
 
-***
-***
-
 #### Panda 3D
 
 - Procedural Terrain Generation
