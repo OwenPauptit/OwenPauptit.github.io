@@ -22,7 +22,9 @@ The maze generator uses a recursive backtracking algorithm to create the mazes, 
 
 [Download for Windows](/ProgramRepos/Pygame-MazeGenerator/MazeGenerator.zip?raw=true)
 
-- Dropper Dodge
+- **Snake**
+
+Snake is a simple game in which the player uses the arrow keys to control the snakes movement. The player aims to eat the fruit (indicated by the red square) which causes the snake to grow. The player dies if the snake's head touches it's body or the walls of the game area. There are basic settings window's which allow the user to change the size of the grid, the speed of the snake and the number of fruit.
 
 - Calculator
 
@@ -30,11 +32,11 @@ The maze generator uses a recursive backtracking algorithm to create the mazes, 
 
 - Painter
 
-- Snake
-
 - Rain
 
 - Mitosis
+
+- Dropper Dodge
 
 
 #### Panda 3D
