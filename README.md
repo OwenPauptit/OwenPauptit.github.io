@@ -73,4 +73,4 @@ I recently started learning C++, and soon after, I started experimenting with th
 - Noughts and Crosses
 
 
-> **[Linked in](https://linkedin.com/in/owen-pauptit/)
+> **[Linked in](https://linkedin.com/in/owen-pauptit/)**
