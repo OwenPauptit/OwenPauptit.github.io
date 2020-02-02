@@ -16,6 +16,8 @@ Garden Defence is my own tower defence strategy game. Players place different gn
 
 The majority of the game is played using only a mouse (or touchscreen), with the only exception being the ability to cancel a gnome placement using the escape button on the keyboard.
 
+[Github Repository](https://github.com/owenpauptit/pygame-gardendefence)
+
 [Download for Windows](/ProgramRepos/Pygame-GardenDefence/GardenDefence.zip?raw=true "Zip file download for Garden Defence")
 
 ---
