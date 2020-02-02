@@ -34,6 +34,8 @@ Once the maze has been created, the user can then try to reach the finishing squ
 
 ![The playing screen, red square = player, green square = finish](/ProgramRepos/Pygame-MazeGenerator/MazeGeneratorFiles/GenerationScreenShot-shrunk.png)
 
+[Github Repository](https://github.com/owenpauptit/pygame-mazegenerator)
+
 [Download for Windows](/ProgramRepos/Pygame-MazeGenerator/MazeGenerator.zip?raw=true "zip file download for the Maze Generator")
 
 ---
@@ -44,6 +46,16 @@ Snake is a simple game in which the player uses the arrow keys to control the sn
 
 ---
 
+- **Mitosis**
+
+Mitosis is the process of cell division. This program initially creates a single cell which moves around randomly, at random velocities calculated from the velocity in the previous frame. When a cell is left-clicked by the mouse, it divides creating two new cells both of which have half the radius of the parent, and inherit some of the parents qualities, such as it's speed before division, and colour. However these qualities mutate slightly creating two slightly different cells.
+
+A cell will grow if it is right-clicked by the mouse, and no other qualities will change. This means that the simulation can continue to evolve without the cells becoming too small to see. A cell can be killed by using the middle mouse button, allowing a user to remove any unwanted cells. The simulation will reset if the 'R' button is pressed on the keyboard.
+
+[Github Repository](https://github.com/owenpauptit/pygame-mitosis)
+
+---
+
 - Calculator
 
 - 2048
@@ -51,8 +63,6 @@ Snake is a simple game in which the player uses the arrow keys to control the sn
 - Painter
 
 - Rain
-
-- Mitosis
 
 - Dropper Dodge
 
