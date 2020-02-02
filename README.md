@@ -44,6 +44,8 @@ Once the maze has been created, the user can then try to reach the finishing squ
 
 Snake is a simple game in which the player uses the arrow keys to control the snakes movement. The player aims to eat the fruit (indicated by the red square) which causes the snake to grow. The player dies if the snake's head touches it's body or the walls of the game area. There are basic settings window's which allow the user to change the size of the grid, the speed of the snake and the number of fruit.
 
+[Github Repository](https://github.com/owenpauptit/Pygame-snake)
+
 ---
 
 - **Mitosis**
