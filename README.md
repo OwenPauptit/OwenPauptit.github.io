@@ -60,9 +60,17 @@ A cell will grow if it is right-clicked by the mouse, and no other qualities wil
 
 ---
 
-- Calculator
+- **2048**
 
-- 2048
+2048 is a sliding block puzzle game first created by Italian web developer Gabriele Cirulli. The player starts with a single block on the board, and can use the arrow keys to move the block up, down, left or right. As each move takes place, a new bvlock is spawned on the board. The blocks start off with a value of 2, but if two blocks with the same number collide, their values sum and they become one block.
+
+This process continues until every space on the board is taken up by a block. It is the player's goal to have a block with the value 2048, but they can continue playing to try and achieve the highest score they can.
+
+[Github Repository](https://github.com/owenpauptit/pygame-2048)
+
+---
+
+- Calculator
 
 - Painter
 
