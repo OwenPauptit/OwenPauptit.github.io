@@ -70,11 +70,17 @@ This process continues until every space on the board is taken up by a block. It
 
 ---
 
-- Calculator
+- **Painter**
 
-- Painter
+This is a simple program that lets the user 'paint' onto a canvas using the mouse. Different colours can be selected from the HUD at the top of the screen, and the size can be altered using the slider. To erase, simply select the white paint.
 
-- Rain
+- **Calculator**
+
+This program is a very basic calculator which can perform simple arithemtic operations. It can either be controlled with the keyboard, or by clicking the buttons on the GUI.
+
+- **Rain**
+
+This is a simple program that
 
 - Dropper Dodge
 
