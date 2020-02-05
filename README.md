@@ -74,11 +74,15 @@ This process continues until every space on the board is taken up by a block. It
 
 This is a simple program that lets the user 'paint' onto a canvas using the mouse. Different colours can be selected from the HUD at the top of the screen, and the size can be altered using the slider. To erase, simply select the white paint.
 
+[Github Repository](https://github.com/owenpauptit/pygame-painter)
+
 ---
 
 - **Calculator**
 
 This program is a very basic calculator which can perform simple arithemtic operations. It can either be controlled with the keyboard, or by clicking the buttons on the GUI.
+
+[Github Repository](https://github.com/owenpauptit/pygame-calculator)
 
 ---
 
@@ -88,15 +92,17 @@ This is a simple program that simulates a rain effect. The speed of the rain is 
 
 If 'P' is pressed on the keyboard, the rain becomes purple and Prince starts playing.
 
+[Github Repository](https://github.com/owenpauptit/pygame-rain)
+
 ---
 
-- Dropper Dodge
+- **Dropper Dodge**
 
 ---
 
 #### Panda 3D
 
-- Procedural Terrain Generation
+- **Procedural Terrain Generation**
 
 ## C++ Projects
 
@@ -121,6 +127,8 @@ The surrounding cells of a cell are the 8 cells neighbouring that cell, either h
 White squares represent alive cells, and black squares represent dead cells.
 
 You can progress through each generation by clicking the mouse inside the game window.
+
+[Github Repository](https://github.com/owenpauptit/sfml/gameoflife)
 
 ---
 
