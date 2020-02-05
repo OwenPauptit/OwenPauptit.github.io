@@ -74,15 +74,25 @@ This process continues until every space on the board is taken up by a block. It
 
 This is a simple program that lets the user 'paint' onto a canvas using the mouse. Different colours can be selected from the HUD at the top of the screen, and the size can be altered using the slider. To erase, simply select the white paint.
 
+---
+
 - **Calculator**
 
 This program is a very basic calculator which can perform simple arithemtic operations. It can either be controlled with the keyboard, or by clicking the buttons on the GUI.
 
+---
+
 - **Rain**
 
-This is a simple program that
+This is a simple program that simulates a rain effect. The speed of the rain is dependent on the X position of the mouse inside the window. The sound effects can be muted and unmuted by pressing the space bar.
+
+If 'P' is pressed on the keyboard, the rain becomes purple and Prince starts playing.
+
+---
 
 - Dropper Dodge
+
+---
 
 #### Panda 3D
 
