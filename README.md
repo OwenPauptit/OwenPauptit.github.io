@@ -104,13 +104,17 @@ If 'P' is pressed on the keyboard, the rain becomes purple and Prince starts pla
 
 - **Procedural Terrain Generation**
 
+---
+
 ## C++ Projects
 
 I recently started learning C++, and soon after, I started experimenting with the [SFML](#sfml) libraries.
 
 #### SFML
 
-- Flappy Bird
+- **Flappy Bird**
+
+---
 
 - **Conway's Game of Life**
 
@@ -118,9 +122,9 @@ This program is a simulation of Conway's Game of Life using SFML.
 
 Conway's game of life is a zero player game, which takes a single input, then computes the following generations. It consists of a grid of cells which can either be alive or dead. When the next generation is calculated, the cells live or die depending on 3 rules:
 
-> - If a living cell is surrounded by less than two other cells, it dies of underpopulation
-> - If a living cell is surrounded by more than three other cells, it dies of overpopulation
-> - if a dead cell is surrounded by exactly three other cells, it is born
+> 1. If a living cell is surrounded by less than two other cells, it dies of underpopulation
+> 2. If a living cell is surrounded by more than three other cells, it dies of overpopulation
+> 3. if a dead cell is surrounded by exactly three other cells, it is born
 
 The surrounding cells of a cell are the 8 cells neighbouring that cell, either horizontally, vertically or diagonally.
 
@@ -132,9 +136,11 @@ You can progress through each generation by clicking the mouse inside the game w
 
 ---
 
-- Pong
+- **Pong**
 
-- Noughts and Crosses
+---
+
+- **Noughts and Crosses**
 
 ***  
   
