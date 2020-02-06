@@ -134,7 +134,7 @@ Currently, the game can be started with a seed input, or a preset. The seed is u
 
 ![image](/ProgramRepos/SFML-GameOfLife/GameOfLifeFiles/randomseed.PNG)
 
-![image](/ProgramRepos/SFML-GameOfLife/GameOfLifeFiles/Max.PNG)
+![image](/ProgramRepos/SFML-GameOfLife/GameOfLifeFiles/max.PNG)
 
 [Github Repository](https://github.com/owenpauptit/sfml/gameoflife)
 
