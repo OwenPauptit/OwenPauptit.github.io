@@ -130,7 +130,11 @@ The surrounding cells of a cell are the 8 cells neighbouring that cell, either h
 
 White squares represent alive cells, and black squares represent dead cells.
 
-You can progress through each generation by clicking the mouse inside the game window.
+Currently, the game can be started with a seed input, or a preset. The seed is used to generate a grid of cells, and the presets read in the state of the cells in the grid from a text file.
+
+![image](/ProgramRepos/SFML-GameOfLife/GameOfLifeFiles/randomseed.PNG)
+
+![image](/ProgramRepos/SFML-GameOfLife/GameOfLifeFiles/max.PNG)
 
 [Github Repository](https://github.com/owenpauptit/sfml/gameoflife)
 
