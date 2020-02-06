@@ -132,7 +132,7 @@ White squares represent alive cells, and black squares represent dead cells.
 
 Currently, the game can be started with a seed input, or a preset. The seed is used to generate a grid of cells, and the presets read in the state of the cells in the grid from a text file.
 
-![image](/ProgramRepos/SFML-GameOfLife/GameOfLifeFiles/Combined Image.png)
+![image](/ProgramRepos/SFML-GameOfLife/GameOfLifeFiles/CombinedImage.png)
 
 [Github Repository](https://github.com/owenpauptit/sfml/gameoflife)
 
