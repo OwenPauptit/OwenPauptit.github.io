@@ -16,6 +16,8 @@ Garden Defence is my own tower defence strategy game. Players place different gn
 
 The majority of the game is played using only a mouse (or touchscreen), with the only exception being the ability to cancel a gnome placement using the escape button on the keyboard.
 
+[Github Repository](https://github.com/owenpauptit/pygame-gardendefence)
+
 [Download for Windows](/ProgramRepos/Pygame-GardenDefence/GardenDefence.zip?raw=true "Zip file download for Garden Defence")
 
 ---
@@ -32,6 +34,8 @@ Once the maze has been created, the user can then try to reach the finishing squ
 
 ![The playing screen, red square = player, green square = finish](/ProgramRepos/Pygame-MazeGenerator/MazeGeneratorFiles/GenerationScreenShot-shrunk.png)
 
+[Github Repository](https://github.com/owenpauptit/pygame-mazegenerator)
+
 [Download for Windows](/ProgramRepos/Pygame-MazeGenerator/MazeGenerator.zip?raw=true "zip file download for the Maze Generator")
 
 ---
@@ -40,23 +44,67 @@ Once the maze has been created, the user can then try to reach the finishing squ
 
 Snake is a simple game in which the player uses the arrow keys to control the snakes movement. The player aims to eat the fruit (indicated by the red square) which causes the snake to grow. The player dies if the snake's head touches it's body or the walls of the game area. There are basic settings window's which allow the user to change the size of the grid, the speed of the snake and the number of fruit.
 
+[Github Repository](https://github.com/owenpauptit/Pygame-snake)
+
 ---
 
-- Calculator
+- **Mitosis**
 
-- 2048
+Mitosis is the process of cell division. This program initially creates a single cell which moves around randomly, at random velocities calculated from the velocity in the previous frame. When a cell is left-clicked by the mouse, it divides creating two new cells both of which have half the radius of the parent, and inherit some of the parents qualities, such as it's speed before division, and colour. However these qualities mutate slightly creating two slightly different cells.
 
-- Painter
+![Screenshot of mitosis simulation/game](/ProgramRepos/Pygame-Mitosis/MitosisFiles/screenshot.png)
 
-- Rain
+A cell will grow if it is right-clicked by the mouse, and no other qualities will change. This means that the simulation can continue to evolve without the cells becoming too small to see. A cell can be killed by using the middle mouse button, allowing a user to remove any unwanted cells. The simulation will reset if the 'R' button is pressed on the keyboard.
 
-- Mitosis
+[Github Repository](https://github.com/owenpauptit/pygame-mitosis)
 
-- Dropper Dodge
+---
+
+- **2048**
+
+2048 is a sliding block puzzle game first created by Italian web developer Gabriele Cirulli. The player starts with a single block on the board, and can use the arrow keys to move the block up, down, left or right. As each move takes place, a new bvlock is spawned on the board. The blocks start off with a value of 2, but if two blocks with the same number collide, their values sum and they become one block.
+
+This process continues until every space on the board is taken up by a block. It is the player's goal to have a block with the value 2048, but they can continue playing to try and achieve the highest score they can.
+
+[Github Repository](https://github.com/owenpauptit/pygame-2048)
+
+---
+
+- **Painter**
+
+This is a simple program that lets the user 'paint' onto a canvas using the mouse. Different colours can be selected from the HUD at the top of the screen, and the size can be altered using the slider. To erase, simply select the white paint.
+
+[Github Repository](https://github.com/owenpauptit/pygame-painter)
+
+---
+
+- **Calculator**
+
+This program is a very basic calculator which can perform simple arithemtic operations. It can either be controlled with the keyboard, or by clicking the buttons on the GUI.
+
+[Github Repository](https://github.com/owenpauptit/pygame-calculator)
+
+---
+
+- **Rain**
+
+This is a simple program that simulates a rain effect. The speed of the rain is dependent on the X position of the mouse inside the window. The sound effects can be muted and unmuted by pressing the space bar.
+
+If 'P' is pressed on the keyboard, the rain becomes purple and Prince starts playing.
+
+[Github Repository](https://github.com/owenpauptit/pygame-rain)
+
+---
+
+- **Dropper Dodge**
+
+---
 
 #### Panda 3D
 
-- Procedural Terrain Generation
+- **Procedural Terrain Generation**
+
+---
 
 ## C++ Projects
 
@@ -64,13 +112,35 @@ I recently started learning C++, and soon after, I started experimenting with th
 
 #### SFML
 
-- Flappy Bird
+- **Flappy Bird**
 
-- Conway's Game of Life
+---
 
-- Pong
+- **Conway's Game of Life**
 
-- Noughts and Crosses
+This program is a simulation of Conway's Game of Life using SFML.
+
+Conway's game of life is a zero player game, which takes a single input, then computes the following generations. It consists of a grid of cells which can either be alive or dead. When the next generation is calculated, the cells live or die depending on 3 rules:
+
+> - If a living cell is surrounded by less than two other cells, it dies of underpopulation
+> - If a living cell is surrounded by more than three other cells, it dies of overpopulation
+> - if a dead cell is surrounded by exactly three other cells, it is born
+
+The surrounding cells of a cell are the 8 cells neighbouring that cell, either horizontally, vertically or diagonally.
+
+White squares represent alive cells, and black squares represent dead cells.
+
+You can progress through each generation by clicking the mouse inside the game window.
+
+[Github Repository](https://github.com/owenpauptit/sfml/gameoflife)
+
+---
+
+- **Pong**
+
+---
+
+- **Noughts and Crosses**
 
 ***  
   
