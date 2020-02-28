@@ -14,7 +14,7 @@ With python, I have mostly used the [pygame](#pygame) libraries, but have also e
 
 Garden Defence is my own tower defence strategy game. Players place different gnomes into the garden to fight the attacking insects. Money is earned from killing enemies, and can be used to buy more gnomes or upgrade existing gnomes. Upgrades can be bought by clicking the existing gnome, clicking the upgrade arrow, and then choosing between increasing range or power.
 
-The majority of the game is played using only a mouse (or touchscreen), with the only exception being the ability to cancel a gnome placement using the escape button on the keyboard.
+The majority of the game is played using only a mouse (or touchscreen), with the only exception being the ability to cancel a gnome placement using the escape button on the keyboard and renaming save game files (which can be done by right clicking on a save file and typing on the keyboard).
 
 [Github Repository](https://github.com/owenpauptit/pygame-gardendefence)
 
