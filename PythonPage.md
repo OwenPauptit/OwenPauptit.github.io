@@ -98,11 +98,22 @@ If 'P' is pressed on the keyboard, the rain becomes purple and Prince starts pla
 
 - **Dropper Dodge**
 
+This was the first full game I created using Pygame. The player controls a car using the 'a' and 'd' keys and tries to dodge the incoming enemies. The longer the player survives, the more enemies fall increasing difficulty.
+
+[Github Repository](https://github.com/owenpauptit/pygame-dropperdodgegame)
+
+
 ---
 
 #### Panda 3D
 
+Panda3D is a 3D game engine/library written in C to maximise performance. Currently, I only have a single full project. In order to run a Panda3D program, [Panda3D](https://www.panda3d.org/) must be installed as well as python.
+
 - **Procedural Terrain Generation**
+
+This program uses many rows of triangle strips, each vertex having a random height based off the surrounding vertices. The colour of each node is dependent on it's relative height. This results in terrain-like procedural generation with the camera floating over the terrain.
+
+[Github Repository](https://github.com/owenpauptit/panda3d-proceduralterraingeneration)
 
 ---
 
