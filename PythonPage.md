@@ -14,7 +14,7 @@ With python, I have mostly used the [pygame](#pygame) libraries, but have also e
 
 Garden Defence is my own tower defence strategy game. Players place different gnomes into the garden to fight the attacking insects. Money is earned from killing enemies, and can be used to buy more gnomes or upgrade existing gnomes. Upgrades can be bought by clicking the existing gnome, clicking the upgrade arrow, and then choosing between increasing range or power.
 
-The majority of the game is played using only a mouse (or touchscreen), with the only exception being the ability to cancel a gnome placement using the escape button on the keyboard.
+The majority of the game is played using only a mouse (or touchscreen), with the only exception being the ability to cancel a gnome placement using the escape button on the keyboard and renaming save game files (which can be done by right clicking on a save file and typing on the keyboard).
 
 [Github Repository](https://github.com/owenpauptit/pygame-gardendefence)
 
@@ -28,11 +28,11 @@ This program generates a maze that the user can then use the arrow keys to navig
 
 The generation part of the program uses a recursive backtracking algorithm to create the maze, which can be viewed when "Show Maze Generation" is selected in the set up menu. 
 
-![The Recursive Backtracking Algorithm](/ProgramRepos/Pygame-MazeGenerator/MazeGeneratorFiles/PlayingScreenShot-shrunk.png)
+![The Recursive Backtracking Algorithm](/ProgramRepos/Pygame-MazeGenerator/MazeGeneratorFiles/GenerationScreenShot-shrunk.png)
 
 Once the maze has been created, the user can then try to reach the finishing square (indicated by a green square) using the arrow keys on the keyboard. If the user completes the maze, they can choose to play either an easier maze, a harder maze or a maze of the same difficulty. Or, the user can press 'S' to go to the set up menu, where they can manually set the size of the grid.
 
-![The playing screen, red square = player, green square = finish](/ProgramRepos/Pygame-MazeGenerator/MazeGeneratorFiles/GenerationScreenShot-shrunk.png)
+![The playing screen, red square = player, green square = finish](/ProgramRepos/Pygame-MazeGenerator/MazeGeneratorFiles/PlayingScreenShot-shrunk.png)
 
 [Github Repository](https://github.com/owenpauptit/pygame-mazegenerator)
 
@@ -98,51 +98,26 @@ If 'P' is pressed on the keyboard, the rain becomes purple and Prince starts pla
 
 - **Dropper Dodge**
 
+This was the first full game I created using Pygame. The player controls a car using the 'a' and 'd' keys and tries to dodge the incoming enemies. The longer the player survives, the more enemies fall increasing difficulty.
+
+[Github Repository](https://github.com/owenpauptit/pygame-dropperdodgegame)
+
+
 ---
 
 #### Panda 3D
 
+Panda3D is a 3D game engine/library written in C to maximise performance. Currently, I only have a single full project. In order to run a Panda3D program, [Panda3D](https://www.panda3d.org/) must be installed as well as python.
+
 - **Procedural Terrain Generation**
 
----
+This program uses many rows of triangle strips, each vertex having a random height based off the surrounding vertices. The colour of each node is dependent on it's relative height. This results in terrain-like procedural generation with the camera floating over the terrain.
 
-## C++ Projects
-
-I recently started learning C++, and soon after, I started experimenting with the [SFML](#sfml) libraries.
-
-#### SFML
-
-- **Flappy Bird**
+[Github Repository](https://github.com/owenpauptit/panda3d-proceduralterraingeneration)
 
 ---
 
-- **Conway's Game of Life**
-
-This program is a simulation of Conway's Game of Life using SFML.
-
-Conway's game of life is a zero player game, which takes a single input, then computes the following generations. It consists of a grid of cells which can either be alive or dead. When the next generation is calculated, the cells live or die depending on 3 rules:
-
-> - If a living cell is surrounded by less than two other cells, it dies of underpopulation
-> - If a living cell is surrounded by more than three other cells, it dies of overpopulation
-> - if a dead cell is surrounded by exactly three other cells, it is born
-
-The surrounding cells of a cell are the 8 cells neighbouring that cell, either horizontally, vertically or diagonally.
-
-White squares represent alive cells, and black squares represent dead cells.
-
-Currently, the game can be started with a seed input, or a preset. The seed is used to generate a grid of cells, and the presets read in the state of the cells in the grid from a text file.
-
-![image](/ProgramRepos/SFML-GameOfLife/GameOfLifeFiles/CombinedImage.png)
-
-[Github Repository](https://github.com/owenpauptit/sfml/gameoflife)
-
----
-
-- **Pong**
-
----
-
-- **Noughts and Crosses**
+## [C++ Projects](/CPage.md)
 
 ***  
   
