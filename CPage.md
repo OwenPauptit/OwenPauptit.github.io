@@ -30,7 +30,7 @@ Currently, the game can be started with a seed input, or a preset. The seed is u
 
 [Github Repository](https://github.com/owenpauptit/sfml/gameoflife)
 
-[Download For Windows](/ProgramRepos/SFML-GameOfLife/GameOfLifeFiles/GameOfLife.zip?raw=true)
+[Download For Windows](/ProgramRepos/SFML-GameOfLife/GameOfLife.zip?raw=true)
 
 ---
 
