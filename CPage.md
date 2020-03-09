@@ -10,10 +10,6 @@ I recently started learning C++, and soon after, I started experimenting with th
 
 #### SFML
 
-- **Flappy Bird**
-
----
-
 - **Conway's Game of Life**
 
 This program is a simulation of Conway's Game of Life using SFML.
@@ -36,7 +32,15 @@ Currently, the game can be started with a seed input, or a preset. The seed is u
 
 ---
 
+- **Flappy Bird**
+
+---
+
 - **Pong**
+
+---
+
+- **Connect Four**
 
 ---
 
