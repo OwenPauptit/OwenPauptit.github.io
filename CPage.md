@@ -36,25 +36,30 @@ The game can be started with a random or custom seed, or a preset (either choosi
 
 ![image](/ProgramRepos/SFML-GameOfLife/GameOfLifeFiles/CombinedImage.png)
 
-[Github Repository](https://github.com/owenpauptit/sfml/gameoflife)
+[Github Repository](https://github.com/owenpauptit/sfml-gameoflife)
 
 [Download For Windows](/ProgramRepos/SFML-GameOfLife/GameOfLife.zip?raw=true)
 
 ---
 
 - **Flappy Bird**
+[Github Repository](https://github.com/owenpauptit/sfml-flappybird)
+
 
 ---
 
 - **Pong**
+[Github Repository](https://github.com/owenpauptit/sfml-pong)
 
 ---
 
 - **Connect Four**
+[Github Repository](https://github.com/owenpauptit/sfml-connectfour)
 
 ---
 
 - **Noughts and Crosses**
+[Github Repository](https://github.com/owenpauptit/sfml-noughtsandcrosses)
 
 ---
 
