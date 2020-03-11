@@ -24,7 +24,13 @@ The surrounding cells of a cell are the 8 cells neighbouring that cell, either h
 
 White squares represent alive cells, and black squares represent dead cells.
 
-Currently, the game can be started with a seed input, or a preset. The seed is used to generate a grid of cells, and the presets read in the state of the cells in the grid from a text file.
+The game can be started with a random or custom seed, or a preset (either choosing preset at the main menu and typing the name of the preset in the console, or choosing "Load from file" from the menu and typing the file path into the console). Currently, the presets are:
+   - Max
+   - Gosper Glider Gun
+   - Side Car Gun
+   - Gliderless Gun
+   - Double Gliderless Gun
+   - AK-94
 
 ![image](/ProgramRepos/SFML-GameOfLife/GameOfLifeFiles/CombinedImage.png)
 
