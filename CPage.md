@@ -43,22 +43,26 @@ The game can be started with a random or custom seed, or a preset (either choosi
 ---
 
 - **Flappy Bird**
+
 [Github Repository](https://github.com/owenpauptit/sfml-flappybird)
 
 
 ---
 
 - **Pong**
+
 [Github Repository](https://github.com/owenpauptit/sfml-pong)
 
 ---
 
 - **Connect Four**
+
 [Github Repository](https://github.com/owenpauptit/sfml-connectfour)
 
 ---
 
 - **Noughts and Crosses**
+
 [Github Repository](https://github.com/owenpauptit/sfml-noughtsandcrosses)
 
 ---
