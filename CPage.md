@@ -34,7 +34,7 @@ The game can be started with a random or custom seed, or a preset (either choosi
 >   - AK-94
 
 
-![image](/ProgramRepos/SFML-GameOfLife/GameOfLifeFiles/CombinedImage.png)
+![image](/ProgramRepos/SFML-GameOfLife/GameOfLifeFiles/CombinedImage.png "Random seed (left) and the 'Max' (right)")
 
 [Github Repository](https://github.com/owenpauptit/sfml-gameoflife)
 
