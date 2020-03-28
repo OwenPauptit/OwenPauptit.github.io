@@ -35,6 +35,10 @@ As you can see, the **Y** is in the correct position, but the **B** and **R** ar
 
 The player wins when they guess the correct combination.
 
+[Github Repository](https://github.com/owenpauptit/MasterMind)
+
+[Download for Windows](/ProgramRepos/Console-Mastermind/mastermind.zip?raw=true)
+
 ---
 
 ## [Python Projects](/PythonPage.md)
