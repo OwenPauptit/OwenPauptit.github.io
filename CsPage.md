@@ -6,10 +6,11 @@
 
 ## C# Projects
 
-I decided in March 2020, that for my A level coursework a language like C# or Java would be more suitable. I chose C# due to my familiarity with visual studio from my experience with C++. I initially found the classes in C# confusing after programming for a few months in C++, so started off by created text-based programs that ran in the console. 
+I decided in March 2020, that for my A level coursework a language like C# or Java would be more suitable. I chose C# due to my familiarity with visual studio from my experience with C++. I initially found the classes in C# confusing after programming for a few months in C++, so started off by created [text-based programs that ran in the console](#text-based-programs). 
 
-### Mastermind
+### Text-based Programs
 
+- **Mastermind**
 Mastermind is a game that involves the use of several colours (Orange, blue, red, green, pink, white and yellow). Four of these colours are chosen by the computer and placed in a random order.
 
 The player has ten guesses to find the order of the colours. Each time the player makes a guess, they are told how many are the correct colour and correct position, and how manya re the correct colour but incorrect position. For example...
