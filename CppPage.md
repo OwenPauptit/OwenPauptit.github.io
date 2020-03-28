@@ -69,6 +69,8 @@ The game can be started with a random or custom seed, or a preset (either choosi
 
 ## [Python Projects](/PythonPage.md)
 
+## [C# Projects](/CsPage.md)
+
 ***  
   
   
