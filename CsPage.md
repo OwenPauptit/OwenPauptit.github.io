@@ -6,6 +6,8 @@
 
 ## C# Projects
 
+I decided in March 2020, that for my A level coursework a language like C# or Java would be more suitable. I chose C# due to my familiarity with visual studio from my experience with C++. I initially found the classes in C# confusing after programming for a few months in C++, so started off by created text-based programs that ran in the console. 
+
 ---
 
 ## [Python Projects](/PythonPage.md)
