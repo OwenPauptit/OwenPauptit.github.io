@@ -37,8 +37,7 @@ The player wins when they guess the correct combination.
 
 [Github Repository](https://github.com/owenpauptit/MasterMind)
 
-[Download for Windows](/ProgramRepos/Console-Mastermind/mastermind.zip?raw=true)
-
+[Download for Windows](/ProgramRepos/Console-Mastermind/Mastermind.zip?raw=true)
 ---
 
 ## [Python Projects](/PythonPage.md)
