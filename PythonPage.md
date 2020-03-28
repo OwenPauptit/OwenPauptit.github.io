@@ -117,7 +117,9 @@ This program uses many rows of triangle strips, each vertex having a random heig
 
 ---
 
-## [C++ Projects](/CPage.md)
+## [C++ Projects](/CppPage.md)
+
+## [C#Projects](/CsPage.md)
 
 ***  
   
