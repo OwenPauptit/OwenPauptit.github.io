@@ -6,7 +6,7 @@
 
 ## C++ Projects
 
-I recently started learning C++, and soon after, I started experimenting with the [SFML](#sfml) libraries.
+I started learning C++ late 2019, and soon after, I started experimenting with the [SFML](#sfml) libraries.
 
 #### SFML
 
