@@ -31,7 +31,7 @@ the computer will output:
     Correct colour, incorrect position:   2
 ```
 
-As you can see, the **Y** is in the correct position, but the **B** and **R** are both present in the code, but are not in the correct position.
+As you can see, the **Y** is in the correct position, and while the **B** and **R** are both present in the code, they are not in the correct position.
 
 The player wins when they guess the correct combination.
 
