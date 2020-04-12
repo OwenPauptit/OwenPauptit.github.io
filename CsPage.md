@@ -27,14 +27,7 @@ The different monster types are as follows:
 | Ж           | Won't move, but will shoot rapidly in the direction of the player      |  10 %                   |
 | Ӝ           | Won't move and will shoot at a slower rate, but in all four directions |  5  %                   |
 
- 1. ѫ  - Fast, but not very much health
- 
- 2. Ѫ  - Slow, but double health
- 
- 3. Ж  - Won't move, but will shoot rapidly in the direction of the player
- 
- 4. Ӝ  - Won't move and will shoot at a slower rate, but in all four directions
- 
+\*  The chance of spawning is the chance that, given a monster is being spawned, xxx will be spawned
  
 
 [Github Repository](https://github.com/owenpauptit/DungeonExplorer)
