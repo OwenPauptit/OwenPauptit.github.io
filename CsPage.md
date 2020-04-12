@@ -20,9 +20,12 @@ A player's score is the number of monsters they have killed, if a monster manage
 
 The different monster types are as follows:
 
-| **Monster** | **Description**                                           | **Chance of spawning*** |
-| ------- | ----------------------------------------------------- | ------------------- |
-| ѫ       | Fast, but not very much health                        |  50 %               |
+| **Monster** | **Description**                                                        | **Chance of spawning*** |
+| ----------- | ---------------------------------------------------------------------- | ----------------------- |
+| ѫ           | Fast, but not very much health                                         |  50 %                   |
+| Ѫ           | Slow, but double health                                                |  35 %                   |
+| Ж           | Won't move, but will shoot rapidly in the direction of the player      |  10 %                   |
+| Ӝ           | Won't move and will shoot at a slower rate, but in all four directions |  5  %                   |
 
  1. ѫ  - Fast, but not very much health
  
