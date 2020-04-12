@@ -115,7 +115,7 @@ Panda3D is a 3D game engine/library written in C to maximise performance. Curren
 
 This program uses many rows of triangle strips, each vertex having a random height based off the surrounding previous vertices. The colour of each node is dependent on it's relative height, ranging from brown, to green, to grey, to white. This results in hills/mountains and valleys.
 
-![Image](/Resources/Images/ProceduralTerrainGenerationScreenShot.png)
+![Image](/Resources/Images/ProceduralTerrainGenerationScreenShot.png) 
 
 As the camera moves forwards, new triangle strips are created at the end of the map, and the triangle strips behind the camera are deleted. If I were to optimise this, I would simply edit the existing vertices without moving the camera to increase performance - however as the simulation runs solidly at 60fps on all tested systems, this is not a big issue.
 
