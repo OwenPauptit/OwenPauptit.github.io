@@ -1,75 +1,49 @@
 # Who am I?
 
-**I am an A level student studying Computer Science, Physics, Mathematics and Chemistry. I have found a passion for programming, and enjoy creating games as a way to learn programming languages and any respective libraries. I started learning [Python](#python-projects) (my very first programming language in 2018) and [C++](#c-projects) late 2019.**
+**I am an A level student studying Computer Science, Physics, Mathematics and Chemistry. I have found a passion for programming, and enjoy creating games as a way to learn programming languages and any respective libraries. I started learning [Python](/PythonPage.md) (my very first programming language in 2018) and [C++](/CppPage.md) late 2019. As of March 2020, I have begun learning [C#](/CsPage.md) - the language that I have decided to use for my A level Computer Science coursework.**
 
 ---
 
-## C++ Projects
+## [C# Projects](README.md "Home")
 
-I recently started learning C++, and soon after, I started experimenting with the [SFML](#sfml) libraries.
+I decided in March 2020, that for my A level coursework a language like C# or Java would be more suitable. I chose C# due to my familiarity with visual studio from my experience with C++. I initially found the classes in C# confusing after programming for a few months in C++, so started off by creating some simple [text-based programs that run in the console](#text-based-programs). 
 
-#### SFML
+#### Text-based Programs
 
-- **Conway's Game of Life**
+- **Mastermind**
 
-This program is a simulation of Conway's Game of Life using SFML.
+Mastermind is a game that involves the use of several colours (Orange, blue, red, green, pink, white and yellow). Four of these colours are chosen by the computer and placed in a random order.
 
-Conway's game of life is a zero player game, which takes a single input, then computes the following generations. It consists of a grid of cells which can either be alive or dead. When the next generation is calculated, the cells live or die depending on 3 rules:
+The player has ten guesses to find the order of the colours. Each time the player makes a guess, they are told how many are the correct colour and correct position, and how manya re the correct colour but incorrect position. For example...
 
-> - If a living cell is surrounded by less than two other cells, it dies of underpopulation
-> - If a living cell is surrounded by more than three other cells, it dies of overpopulation
-> - if a dead cell is surrounded by exactly three other cells, it is born
+If the code is
 
-The surrounding cells of a cell are the 8 cells neighbouring that cell, either horizontally, vertically or diagonally.
+> **YPRB** *(Yellow Pink Red Blue)*
 
-White squares represent alive cells, and black squares represent dead cells.
+And the user guesses
 
-The game can be started with a random or custom seed, or a preset (either choosing preset at the main menu and typing the name of the preset in the console, or choosing "Load from file" from the menu and typing the file path into the console). Currently, the presets are:
+> **YOBR** *(Yellow Orange Blue Red)*
 
->   - Max
->   - Gosper Glider Gun
->   - Side Car Gun
->   - Gliderless Gun
->   - Double Gliderless Gun
->   - AK-94
+the computer will output:
 
+```
+    Correct colour, correct position:     1
+    Correct colour, incorrect position:   2
+```
 
-![image](/ProgramRepos/SFML-GameOfLife/GameOfLifeFiles/CombinedImage.png "Random seed (left) and the 'Max' (right)")
+As you can see, the **Y** is in the correct position, and while the **B** and **R** are both present in the code, they are not in the correct position.
 
-[Github Repository](https://github.com/owenpauptit/sfml-gameoflife)
+The player wins when they guess the correct combination.
 
-[Download For Windows](/ProgramRepos/SFML-GameOfLife/GameOfLife.zip?raw=true)
+[Github Repository](https://github.com/owenpauptit/MasterMind)
 
----
-
-- **Flappy Bird**
-
-[Github Repository](https://github.com/owenpauptit/sfml-flappybird)
-
-
----
-
-- **Pong**
-
-[Github Repository](https://github.com/owenpauptit/sfml-pong)
-
----
-
-- **Connect Four**
-
-[Github Repository](https://github.com/owenpauptit/sfml-connectfour)
-
----
-
-- **Noughts and Crosses**
-
-[Github Repository](https://github.com/owenpauptit/sfml-noughtsandcrosses)
+[Download for Windows](/ProgramRepos/Console-Mastermind/Mastermind.zip?raw=true)
 
 ---
 
 ## [Python Projects](/PythonPage.md)
 
-## [C# Projects](/CsPage.md)
+## [C++ Projects](/CppPage.md)
 
 ***  
   
