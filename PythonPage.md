@@ -109,13 +109,17 @@ This was the first full game I created using Pygame. The player controls a car u
 
 #### Panda 3D
 
-Panda3D is a 3D game engine/library written in C to maximise performance. Currently, I only have a single full project. In order to run a Panda3D program, [Panda3D](https://www.panda3d.org/) must be installed as well as python.
+Panda3D is a 3D game engine/library written in C to maximise performance. Currently, I only have a single full project.
 
 - **Procedural Terrain Generation**
 
-This program uses many rows of triangle strips, each vertex having a random height based off the surrounding vertices. The colour of each node is dependent on it's relative height. This results in terrain-like procedural generation with the camera floating over the terrain.
+This program uses many rows of triangle strips, each vertex having a random height based off the surrounding previous vertices. The colour of each node is dependent on it's relative height, ranging from brown, to green, to grey, to white. This results in hills/mountains and valleys.
+
+As the camera moves forwards, new triangle strips are created at the end of the map, and the triangle strips behind the camera are deleted. If I were to optimise this, I would simply edit the existing vertices without moving the camera to increase performance - however as the simulation runs solidly at 60fps on all tested systems, this is not a big issue.
 
 [Github Repository](https://github.com/owenpauptit/panda3d-proceduralterraingeneration)
+
+[Download for Windows](/ProgramRepos/Panda3d-ProceduralTerrainGeneration/TerrainGeneration.zip?raw=true)
 
 ---
 
