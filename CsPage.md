@@ -10,6 +10,20 @@ I decided in March 2020, that for my A level coursework a language like C# or Ja
 
 #### Text-based Programs
 
+- **Dungeon Explorer**
+
+Dungeon explorer is a game where the player navigates (using WASD) through a series of randomly generated rooms with varying sizes, proportions and doors. Sometimes, these rooms will have randomly generated monsters which will attack the player - either by shooting or chasing the player.
+
+The player can attack the monsters back by shooting at them (using the arrow keys).
+
+A player's score is the number of monsters they have killed, if a monster manages to successfully hit the player (either by shooting or chasing) then the player dies and it is game over.
+
+[Github Repository](https://github.com/owenpauptit/DungeonExplorer)
+
+[Download for Windows](/ProgramRepos/Console-DungeonExplorer/DungeonExplorer.exe?raw=true)
+
+---
+
 - **Mastermind**
 
 Mastermind is a game that involves the use of several colours (Orange, blue, red, green, pink, white and yellow). Four of these colours are chosen by the computer and placed in a random order.
