@@ -18,6 +18,22 @@ The player can attack the monsters back by shooting at them (using the arrow key
 
 A player's score is the number of monsters they have killed, if a monster manages to successfully hit the player (either by shooting or chasing) then the player dies and it is game over.
 
+The different monster types are as follows:
+
+| Monster | Description                                           | Chance of spawning* |
+| ------- | ----------------------------------------------------- | ------------------- |
+| ѫ       | Fast, but not very much health                        |  50 %               |
+
+ 1. ѫ  - Fast, but not very much health
+ 
+ 2. Ѫ  - Slow, but double health
+ 
+ 3. Ж  - Won't move, but will shoot rapidly in the direction of the player
+ 
+ 4. Ӝ  - Won't move and will shoot at a slower rate, but in all four directions
+ 
+ 
+
 [Github Repository](https://github.com/owenpauptit/DungeonExplorer)
 
 [Download for Windows](/ProgramRepos/Console-DungeonExplorer/DungeonExplorer.exe?raw=true)
