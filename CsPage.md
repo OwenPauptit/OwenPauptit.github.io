@@ -20,7 +20,7 @@ A player's score is the number of monsters they have killed, if a monster manage
 
 The different monster types are as follows:
 
-**| Monster | Description                                           | Chance of spawning* |**
+| **Monster** | **Description**                                           | **Chance of spawning*** |
 | ------- | ----------------------------------------------------- | ------------------- |
 | ѫ       | Fast, but not very much health                        |  50 %               |
 
