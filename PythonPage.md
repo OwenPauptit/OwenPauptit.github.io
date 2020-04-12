@@ -109,7 +109,7 @@ This was the first full game I created using Pygame. The player controls a car u
 
 #### Panda 3D
 
-Panda3D is a 3D game engine/library written in C to maximise performance. Currently, I only have a single full project.
+Panda3D is a 3D game engine/framework written in C to maximise performance. Currently, I only have a single full project.
 
 - **Procedural Terrain Generation**
 
