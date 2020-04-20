@@ -10,7 +10,7 @@ With python, I have mostly used the [pygame](#pygame) libraries, but have also e
 
 #### Pygame
 
-##### - **Garden Defence**
+##### • **Garden Defence**
 
 ![An in-game screen shot](/ProgramRepos/Pygame-GardenDefence/GardenDefenceFiles/Images/ScreenShotForGithubPages-shrunk.png)
 
