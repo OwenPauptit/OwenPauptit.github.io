@@ -12,7 +12,7 @@ I started learning C++ late 2019, and soon after, I started experimenting with t
 
 #### SFML
 
-- **Conway's Game of Life**
+#####  • Conway's Game of Life
 
 This program is a simulation of Conway's Game of Life using SFML.
 
@@ -44,26 +44,26 @@ The game can be started with a random or custom seed, or a preset (either choosi
 
 ---
 
-- **Flappy Bird**
+#####  • Flappy Bird
 
 [Github Repository](https://github.com/owenpauptit/sfml-flappybird)
 
 
 ---
 
-- **Pong**
+#####  • Pong
 
 [Github Repository](https://github.com/owenpauptit/sfml-pong)
 
 ---
 
-- **Connect Four**
+#####  • Connect Four
 
 [Github Repository](https://github.com/owenpauptit/sfml-connectfour)
 
 ---
 
-- **Noughts and Crosses**
+#####  • Noughts and Crosses
 
 [Github Repository](https://github.com/owenpauptit/sfml-noughtsandcrosses)
 
