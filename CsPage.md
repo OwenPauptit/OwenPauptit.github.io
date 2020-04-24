@@ -12,7 +12,7 @@ I decided in March 2020, that for my A level coursework a language like C# or Ja
 
 #### Text-based Programs
 
-- **Dungeon Explorer**
+#####  • Dungeon Explorer
 
 Dungeon explorer is a game where the player navigates (using WASD) through a series of randomly generated rooms with varying sizes, proportions and doors. Sometimes, these rooms will have randomly generated monsters which will attack the player - either by shooting or chasing the player.
 
@@ -38,7 +38,7 @@ The different monster types are as follows:
 
 ---
 
-- **Mastermind**
+#####  • Mastermind
 
 Mastermind is a game that involves the use of several colours (Orange, blue, red, green, pink, white and yellow). Four of these colours are chosen by the computer and placed in a random order.
 

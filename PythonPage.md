@@ -10,7 +10,7 @@ With python, I have mostly used the [pygame](#pygame) libraries, but have also e
 
 #### Pygame
 
-- **Garden Defence**
+#####  • Garden Defence
 
 ![An in-game screen shot](/ProgramRepos/Pygame-GardenDefence/GardenDefenceFiles/Images/ScreenShotForGithubPages-shrunk.png)
 
@@ -24,7 +24,7 @@ The majority of the game is played using only a mouse (or touchscreen), with the
 
 ---
 
-- **Maze Generator**
+##### • Maze Generator
 
 This program generates a maze that the user can then use the arrow keys to navigate the player (red) and reach the finish square (green).
 
@@ -42,7 +42,7 @@ Once the maze has been created, the user can then try to reach the finishing squ
 
 ---
 
-- **Snake**
+##### • Snake
 
 Snake is a simple game in which the player uses the arrow keys to control the snakes movement. The player aims to eat the fruit (indicated by the red square) which causes the snake to grow. The player dies if the snake's head touches it's body or the walls of the game area. There are basic settings window's which allow the user to change the size of the grid, the speed of the snake and the number of fruit.
 
@@ -50,7 +50,7 @@ Snake is a simple game in which the player uses the arrow keys to control the sn
 
 ---
 
-- **Mitosis**
+##### • Mitosis
 
 Mitosis is the process of cell division. This program initially creates a single cell which moves around randomly, at random velocities calculated from the velocity in the previous frame. When a cell is left-clicked by the mouse, it divides creating two new cells both of which have half the radius of the parent, and inherit some of the parents qualities, such as it's speed before division, and colour. However these qualities mutate slightly creating two slightly different cells.
 
@@ -62,7 +62,7 @@ A cell will grow if it is right-clicked by the mouse, and no other qualities wil
 
 ---
 
-- **2048**
+##### • 2048
 
 2048 is a sliding block puzzle game first created by Italian web developer Gabriele Cirulli. The player starts with a single block on the board, and can use the arrow keys to move the block up, down, left or right. As each move takes place, a new bvlock is spawned on the board. The blocks start off with a value of 2, but if two blocks with the same number collide, their values sum and they become one block.
 
@@ -72,7 +72,7 @@ This process continues until every space on the board is taken up by a block. It
 
 ---
 
-- **Painter**
+##### • Painter
 
 This is a simple program that lets the user 'paint' onto a canvas using the mouse. Different colours can be selected from the HUD at the top of the screen, and the size can be altered using the slider. To erase, simply select the white paint.
 
@@ -80,7 +80,7 @@ This is a simple program that lets the user 'paint' onto a canvas using the mous
 
 ---
 
-- **Calculator**
+##### • Calculator
 
 This program is a very basic calculator which can perform simple arithemtic operations. It can either be controlled with the keyboard, or by clicking the buttons on the GUI.
 
@@ -88,7 +88,7 @@ This program is a very basic calculator which can perform simple arithemtic oper
 
 ---
 
-- **Rain**
+##### • Rain
 
 This is a simple program that simulates a rain effect. The speed of the rain is dependent on the X position of the mouse inside the window. The sound effects can be muted and unmuted by pressing the space bar.
 
@@ -98,7 +98,7 @@ If 'P' is pressed on the keyboard, the rain becomes purple and Prince starts pla
 
 ---
 
-- **Dropper Dodge**
+##### • Dropper Dodge
 
 This was the first full game I created using Pygame. The player controls a car using the 'a' and 'd' keys and tries to dodge the incoming enemies. The longer the player survives, the more enemies fall increasing difficulty.
 
@@ -109,13 +109,13 @@ This was the first full game I created using Pygame. The player controls a car u
 
 #### Panda 3D
 
-Panda3D is a 3D game engine/library written in C to maximise performance. Currently, I only have a single full project.
+Panda3D is a 3D game engine/framework written in C to maximise performance. Currently, I only have a single full project.
 
-- **Procedural Terrain Generation**
+##### • Procedural Terrain Generation
 
 This program uses many rows of triangle strips, each vertex having a random height based off the surrounding previous vertices. The colour of each node is dependent on it's relative height, ranging from brown, to green, to grey, to white. This results in hills/mountains and valleys.
 
-![Image](/Resources/Images/ProceduralTerrainGenerationScreenShot.png)
+![Image](/Resources/Images/ProceduralTerrainGenerationScreenShot.png) 
 
 As the camera moves forwards, new triangle strips are created at the end of the map, and the triangle strips behind the camera are deleted. If I were to optimise this, I would simply edit the existing vertices without moving the camera to increase performance - however as the simulation runs solidly at 60fps on all tested systems, this is not a big issue.
 
