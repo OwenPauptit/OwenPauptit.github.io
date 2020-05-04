@@ -8,13 +8,23 @@
 
 This is a collection of what I believe to be my most important projects.
 
-####  • Conway's Game of Life
+####  • Conway's Game of Life (C++, SFML)
 
 [![image](/ProgramRepos/SFML-GameOfLife/GameOfLifeFiles/CombinedImage.png "Random seed (left) and the 'Max' (right)")](CppPage.md##-conways-game-of-life)
 
 [Download For Windows](/ProgramRepos/SFML-GameOfLife/GameOfLife.zip?raw=true)
 
-####  • Garden Defence
+---
+
+#### • Maze Generator (Python, Pygame)
+
+[![The Recursive Backtracking Algorithm](/ProgramRepos/Pygame-MazeGenerator/MazeGeneratorFiles/GenerationScreenShot-shrunk.png)](PythonPage.md#-maze-generator)
+
+[Download for Windows](/ProgramRepos/Pygame-MazeGenerator/MazeGenerator.zip?raw=true "zip file download for the Maze Generator")
+
+---
+
+####  • Garden Defence (Python, Pygame)
 
 [![An in-game screen shot](/ProgramRepos/Pygame-GardenDefence/GardenDefenceFiles/Images/ScreenShotForGithubPages-shrunk.png)](PythonPage.md#-garden-defence)
 
@@ -22,13 +32,6 @@ This is a collection of what I believe to be my most important projects.
 
 ---
 
-#### • Maze Generator
-
-[![The Recursive Backtracking Algorithm](/ProgramRepos/Pygame-MazeGenerator/MazeGeneratorFiles/GenerationScreenShot-shrunk.png)](PythonPage.md#-maze-generator)
-
-[Download for Windows](/ProgramRepos/Pygame-MazeGenerator/MazeGenerator.zip?raw=true "zip file download for the Maze Generator")
-
----
 ## [Python Projects](/PythonPage.md)
 
 ## [C++ Projects](/CppPage.md)
