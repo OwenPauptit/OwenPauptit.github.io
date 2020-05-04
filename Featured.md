@@ -8,6 +8,12 @@
 
 This is a collection of what I believe to be my most important projects.
 
+####  • Conway's Game of Life
+
+[![image](/ProgramRepos/SFML-GameOfLife/GameOfLifeFiles/CombinedImage.png "Random seed (left) and the 'Max' (right)")](CppPage.md#-game-of-life)
+
+[Download For Windows](/ProgramRepos/SFML-GameOfLife/GameOfLife.zip?raw=true)
+
 ####  • Garden Defence
 
 ![An in-game screen shot](/ProgramRepos/Pygame-GardenDefence/GardenDefenceFiles/Images/ScreenShotForGithubPages-shrunk.png)
@@ -22,7 +28,7 @@ The majority of the game is played using only a mouse (or touchscreen), with the
 
 ---
 
-##### • Maze Generator
+#### • Maze Generator
 
 This program generates a maze that the user can then use the arrow keys to navigate the player (red) and reach the finish square (green).
 
