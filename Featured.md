@@ -16,6 +16,12 @@ This is a collection of what I believe to be my most important projects.
 
 ---
 
+#### • Dijkstra's Shortest Path Algorithm (C#, Console)
+
+![Image](/Resources/Images/Dijkstra.PNG)
+
+---
+
 #### • Maze Generator (Python, Pygame)
 
 [![The Recursive Backtracking Algorithm](/ProgramRepos/Pygame-MazeGenerator/MazeGeneratorFiles/GenerationScreenShot-shrunk.png)](PythonPage.md#-maze-generator)
