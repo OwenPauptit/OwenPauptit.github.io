@@ -30,6 +30,8 @@ Text files can be created to make custom grids, the start is represented by a ca
  
 [Github Repository](https://github.com/owenpauptit/Dijkstra)
 
+[Download for Windows](/ProgramRepos/Console-Dijkstra/Dijkstra.exe?raw=true)
+
 ---
 
 #####  • Dungeon Explorer
