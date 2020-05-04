@@ -51,7 +51,7 @@ The different monster types are as follows:
 | Ж           | Won't move, but will shoot rapidly in the player's direction.          |  10 %                   |
 | Ӝ           | Won't move, will shoot at a slower rate, but in all directions.        |  5  %                   |
 
-\*  The chance of spawning is the chance that, given a monster is being spawned, that monster will be spawned
+\*  The chance of spawning is the chance that, given a monster is being spawned, that particular monster will be spawned
  
 
 [Github Repository](https://github.com/owenpauptit/DungeonExplorer)
