@@ -29,6 +29,7 @@ This is a collection of what I believe to be my most important projects.
 [Download for Windows](/ProgramRepos/Pygame-MazeGenerator/MazeGenerator.zip?raw=true "zip file download for the Maze Generator")
 
 ---
+## [Python Projects](/PythonPage.md)
 
 ## [C++ Projects](/CppPage.md)
 
