@@ -18,7 +18,9 @@ This is a collection of what I believe to be my most important projects.
 
 #### • Dijkstra's Shortest Path Algorithm (C#, Console)
 
-![Image](/Resources/Images/Dijkstra.PNG)
+[![Image](/Resources/Images/Dijkstra.PNG)](CsPage.md#-dijkstras-Shortest-Path-Algorithm)
+
+[Download for Windows](https://github.com/OwenPauptit/OwenPauptit.github.io/blob/master/ProgramRepos/Console-Dijkstra/Dijkstra.zip?raw=true)
 
 ---
 
