@@ -24,6 +24,8 @@ It can either:
  
 It has been created so that diagonals are included, but have 1.5 time the weight of travelling in a straight line.
 
+![Image](/Resources/Images/Dijkstra.PNG)
+
 For it to work in the C# console, the matrix is a multidimensional array of colours. This is printed every refresh, where '██' represents each cell/node. The green node is the start, the red node is the end, and the white nodes are walls.
 
 Text files can be created to make custom grids, the start is represented by a capital 'S', the end is represented by a capital 'F' and walls are represented by capital 'X's.
