@@ -1,0 +1,136 @@
+.darkBackground {
+    background: #eec643
+}
+
+.lightBackground {
+    background: #eef0f2;
+}
+
+.imageBackground {
+    background-image: url("/media/backgrounds/first-person-medium.jpg");
+}
+
+.navLinkGroup ul li a {
+    color: #ffffff
+}
+
+.navLinkGroup ul li a:hover {
+    color: #363636;
+}
+
+.navLink {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navLink:hover {
+    color: #363636;
+    text-decoration: underline;
+}
+
+
+body {
+    margin: 0;
+    font-family: arial, sans-serif;
+    font-weight: 300;
+}
+
+h1 {
+    font-family: arial, sans-serif;
+    font-size: 30;
+    color: #555555;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+header{
+    background: #356063;
+}
+
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Navbar layout */
+
+.navbarLogo {
+    float: left;
+    padding: 10px 0;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 100px;
+    padding-top: 15px;
+
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: large;
+}
+
+/* Navbar hover effects */
+
+
+nav ul li a::before {
+    content: "";
+    display: block;
+    height: 5px;
+    background-color: #aaaaaa;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+nav ul li a:hover::before{
+    width: 100%;
+}
+
+/* Footer */
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+footer ul {
+    list-style: none;
+    display: inline-block;
+}
+
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
