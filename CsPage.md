@@ -106,7 +106,7 @@ The app works by saving text files with the title of each note being the name of
 
 [Github Repository](https://github.com/owenpauptit/xamarin-notesapp)
 
-[APK download](/ProgramRepos/Xamarin-Notes/com.AeselStudios.Notes-signed.apk?raw=true) (Must have 3rd party downloads enabled)
+[APK download](/ProgramRepos/Xamarin-Notes/com.AeselStudios.Notes-Signed.apk) (Must have 3rd party downloads enabled)
 
 ---
 
