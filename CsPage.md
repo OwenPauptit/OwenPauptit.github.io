@@ -8,7 +8,7 @@
 
 ## [C# Projects](README.md)
 
-I decided in March 2020, that for my A level coursework a language like C# or Java would be more suitable. I chose C# due to my familiarity with visual studio from my experience with C++. I initially found the classes in C# confusing after programming for a few months in C++, so started off by creating some simple [text-based programs that run in the console](#text-based-programs). 
+I decided in March 2020, that for my A level coursework a language like C# or Java would be more suitable. I chose C# due to my familiarity with visual studio from my experience with C++. I started off by creating some simple [text-based programs that run in the console](#text-based-programs). In May 2020, I picked up [Xamarin](#xamarin) for android and made a few apps.
 
 #### Text-based Programs
 
@@ -90,6 +90,23 @@ The player wins when they guess the correct combination.
 [Github Repository](https://github.com/owenpauptit/MasterMind)
 
 [Download for Windows](/ProgramRepos/Console-Mastermind/Mastermind.zip?raw=true)
+
+---
+
+#### Xamarin
+
+
+##### • Notes App
+
+"Notes!" is a note taking app that lets you create new notes, save those notes, and edit existing notes created with the app. Each note has a title and body.
+
+!["Notes!" screenshots](/Resources/Images/NotesApp.png)
+
+The app works by saving text files with the title of each note being the name of the text file (i.e. "title.txt") and the content of the note saved inside the document.
+
+[Github Repository](https://github.com/owenpauptit/xamarin-notesapp)
+
+[APK download](/ProgramRepos/Xamarin-Notes/com.AeselStudios.Notes-signed.apk?raw=true) (Must have 3rd party downloads enabled)
 
 ---
 
