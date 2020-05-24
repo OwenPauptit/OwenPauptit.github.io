@@ -41,9 +41,10 @@
 
 .leftRightPair {
     width: 60%;
-    height: 400px;
     margin:auto;
     padding: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .leftRightPair::after{
@@ -165,7 +166,7 @@ nav ul li a:hover::before{
 /* Footer //////////////////////////////////////////////////////////////////////*/
 
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0px;
     left: 0px;
     right: 0px;
