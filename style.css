@@ -108,6 +108,7 @@ p2 {
 
 header {
     margin-top: -21px;
+    height: 150px;
 }
 
 header::after {
@@ -133,7 +134,7 @@ nav ul {
     list-style: none;
 }
 
-nav li {
+nav ul li {
     display: inline-block;
     margin-left: 100px;
     padding-top: 15px;
@@ -147,6 +148,45 @@ nav ul li a {
     text-transform: uppercase;
     font-size: large;
 }
+
+/* Dropdown ////////////////////////////////////////////////////////////////////////*/
+
+.dropdown {
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 0px 0px 4px 4px;
+
+    transition: all ease-in-out 100ms;
+}
+
+nav ul li:hover .dropdown {
+    opacity: 1;
+}
+
+.dropdown li {
+    display: block;
+    border-radius: 3px;
+    position: relative;
+    margin-left: 0;
+    text-align: center;
+}
+
+
+.dropdown li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: medium;
+    text-align: center;
+    margin: auto;
+    display: block;
+
+}
+
 
 /* Navbar hover effects /////////////////////////////////////////////////////////////////////*/
 
