@@ -40,7 +40,7 @@
 }
 
 .leftRightPair {
-    width: 60%;
+    width: 70%;
     margin:auto;
     padding: 0;
     padding-top: 30px;
@@ -51,6 +51,11 @@
     content: "";
     display: table;
     clear: both;
+}
+
+.textBlock{
+    display: block;
+    width: 40%;
 }
 
 /* Full page //////////////////////////////////////////////////////////*/
