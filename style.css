@@ -40,7 +40,7 @@
 }
 
 .leftRightPair {
-    width: 70%;
+    width: 1000px;
     margin:auto;
     padding: 0;
     padding-top: 30px;
@@ -75,7 +75,6 @@ body {
 
 h1 {
     padding-top: 30px;
-    padding-bottom: 10px;
     font-family: arial, sans-serif;
     font-size: 30;
     color: #eeeeee;
@@ -108,7 +107,7 @@ p2 {
 
 header {
     margin-top: -21px;
-    height: 150px;
+    height: 160px;
 }
 
 header::after {
