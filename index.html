@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="style.css" rel="stylesheet"  type="text/css">
+    <title>Website</title>
+
+
+</head>
+<body class="lightBackground">
+
+    <header class="darkBackground">
+        <div class="container">
+            
+            <h1>Owen Pauptit</h1>
+
+            <p1>A portfolio of all my significant programming projects</p1>
+
+            <br>
+
+            <nav class="navLinkGroup">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#">languages</a>
+                        <ul class="dropdown darkBackground">
+                            <li><a href="PythonPage">Python</a></li>
+                            <li><a href="CppPage">C++</a></li>
+                            <li><a href="CsPage">C#</a></li>
+                        </ul>    
+                    </li>
+                    <li><a href="#">project types</a>
+                        <ul class="dropdown darkBackground">
+                            <li><a href="#">Game</a></li>
+                            <li><a href="#">algorithm</a></li>
+                            <li><a href="#">app</a></li>
+                        </ul>    
+                    </li>
+                    <li><a href="README">Markdown</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <div class="container">
+
+        <h2>Who am I?</h2>
+
+        <p2>
+            I am an A level student studying Computer Science, Physics, Mathematics and Chemistry. 
+            I have found a passion for programming, and enjoy creating games as a way to learn programming languages and any respective libraries.
+                <br>
+                <br>
+            I started learning Python (my very first programming language in 2018) and C++ late 2019. As of March 2020, 
+            I have begun learning C# - the language that I have decided to use for my A level Computer Science coursework.
+                <br>
+                <br>
+            Below are some of my favourite projects.
+            </p2>
+
+            <br>
+            <br>
+
+        <div class="leftRightPair">
+            <div class="displayLeft textBlock">
+                <h3>Conway's Game of Life</h3>
+                <p3>
+                    Conway's game of life is a zero player game, which takes a single input, then computes the following generations. It consists of a grid of cells which can either be alive or dead. When the next generation is calculated, the cells live or die depending on 3 rules:
+                    
+                    <ul>
+                        <li> If a living cell is surrounded by less than two other cells, it dies of underpopulation </li>
+                        <li> If a living cell is surrounded by more than three other cells, it dies of overpopulation </li>
+                        <li> - if a dead cell is surrounded by exactly three other cells, it is born</li>
+                    </ul>
+
+                    <a href="ProgramRepos/SFML-GameOfLife/GameOfLife.zip">Download for windows</a>
+                </p3>
+            </div>
+            <div class = "displayRight">                
+                <img src="Resources/Images/GameOfLife-Random.gif" style="float: left; padding-right: 10px; padding-top: 10px;">
+                <img src="Resources/Images/GameOfLife-Max.gif" style="float: right; padding-top: 10px;">
+            </div>
+        </div>
+
+        <div class="leftRightPair">
+            <div class="displayRight textBlock">
+                <h3>Dijktra's Shortest Path Algorithm</h3>
+                <p3>
+                    Dijkstra's Shortest Path Algorithm is a method of finding for finding the shortest paths between nodes in a graph. 
+                    <br><br>
+                    In this implementation, however, I use a matrix. 
+                    <br><br>
+                    The program will find the shortest path from a start point to an end point while avoiding obstcales (walls).
+                    <br><br>
+                    <a href="ProgramRepos/Console-Dijkstra/Dijkstra.zip">Download for windows</a>
+                </p3>
+            </div>
+            <img src="Resources/Images/Dijkstra.gif" class="displayLeft">
+        </div>
+
+        <div class="leftRightPair">
+            <div class="displayLeft textBlock">
+                <h3>Maze Generator</h3>
+                <p3>
+                    This program generates a maze that the user can then use the arrow keys to navigate the player (red) and reach the finish square (green).
+                    <br><br>
+                    The generation part of the program uses a recursive backtracking algorithm to create the maze, which can be viewed when "Show Maze Generation" is selected in the set up menu. 
+                    <br><br>
+                    <a href="ProgramRepos/Pygame-MazeGenerator/MazeGenerator.zip">Download for windows</a>
+                </p3>
+            </div>
+            <img src="Resources/Images/MazeGeneration.gif" class="displayRight">
+        </div>
+
+        <div class="leftRightPair">
+            <div class="displayRight textBlock">
+                <h3>Garden Defence</h3>
+                <p3>
+                    Garden Defence is my own tower defence strategy game where players place different gnomes into the garden to fight the attacking insects. 
+                    <br><br>
+                    Money is earned from killing enemies, and can be used to buy more gnomes or upgrade existing gnomes.               
+                    Upgrades can also be bought by clicking the existing gnome, clicking the upgrade arrow, and then choosing between increasing range or power.
+                    <br><br>
+                    <a href="ProgramRepos/Pygame-GardenDefence/GardenDefence.zip">Download for windows</a>
+                </p3>
+            </div>
+            <img src="Resources/Images/GardenDefence.png" class="displayLeft">
+        </div>
+
+       
+
+
+        <div class="leftRightPair"></div>>
+
+
+    </div>
+
+    <footer class="darkBackground">
+
+        <div class="footerLinks navLinkGroup">
+            <ul class="SiteLinks">
+                <li><a href="README">README</a></li>
+            </ul>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
