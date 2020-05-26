@@ -4,7 +4,7 @@
 
 **I started learning [Python](/PythonPage.md) (my very first programming language in 2018) and [C++](/CppPage.md) late 2019. As of March 2020, I have begun learning [C#](/CsPage.md) - the language that I have decided to use for my A level Computer Science coursework.**
 
-## [Python Projects](README.md)
+## [Python Projects](home.md)
 
 With python, I have mostly used the [pygame](#pygame) libraries, but have also experimented with some other libraries such as the [Panda3d Game Engine](#panda-3d).
 
