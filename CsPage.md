@@ -6,7 +6,7 @@
 
 ---
 
-## [C# Projects](README.md)
+## [C# Projects](home.md)
 
 I decided in March 2020, that for my A level coursework a language like C# or Java would be more suitable. I chose C# due to my familiarity with visual studio from my experience with C++. I started off by creating some simple [text-based programs that run in the console](#text-based-programs). In May 2020, I picked up [Xamarin](#xamarin) for android and made a few apps.
 
