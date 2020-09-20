@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="style.css" rel="stylesheet"  type="text/css">
+    <title>Owen Pauptit</title>
+    
+    <script type="text/javascript">
+            if (screen.width <= 699) {
+                document.location = "home";
+            }
+    </script>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-166874064-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-166874064-1');
+</script>
+
+
+
+</head>
+<body class="lightBackground">
+
+    <header class="darkBackground">
+        <div class="container">
+            
+            <h1>Owen Pauptit</h1>
+
+            <p1>A portfolio of all my significant programming projects</p1>
+
+            <br>
+
+            <nav class="navLinkGroup">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#">languages</a>
+                        <ul class="dropdown darkBackground">
+                            <li><a href="/python.html">Python</a></li>
+                            <li><a href="CppPage">C++</a></li>
+                            <li><a href="CsPage">C#</a></li>
+                        </ul>    
+                    </li>
+                    <li><a href="#">project types</a>
+                        <ul class="dropdown darkBackground">
+                            <li><a href="#">Game</a></li>
+                            <li><a href="#">algorithm</a></li>
+                            <li><a href="#">app</a></li>
+                        </ul>    
+                    </li>
+                    <li><a href="home">Markdown</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <div class="container">
+
+        <h2>Python</h2>
+
+        <p2>
+            Python was the first programming language I learned. I started with basic text-based programs, 
+            then progressed to using the graphics libraries <a href="https://pygame.org">Pygame</a> and <a href="https://panda3d.org">Panda3D</a>
+        </p2>
+
+        <br/><br/>
+
+        <div class="leftRightPair">
+            <div class="displayRight textBlock">
+                <h3>Garden Defence</h3>
+                <p3>
+                    Garden Defence is my own tower defence strategy game created using Pygame where players place different gnomes into the garden to fight the attacking insects. 
+                    <br><br>
+                    Money is earned from killing enemies, and can be used to buy more gnomes or upgrade existing gnomes.               
+                    Upgrades can also be bought by clicking the existing gnome, clicking the upgrade arrow, and then choosing between increasing range or power.
+                    <br><br>
+                    <a href="ProgramRepos/Pygame-GardenDefence/GardenDefence.zip">Download for windows</a>
+                </p3>
+            </div>
+            <img src="Resources/Images/GardenDefence.png" class="displayLeft">
+        </div>
+
+        <div class="leftRightPair">
+            <div class="displayLeft textBlock">
+                <h3>Maze Generator</h3>
+                <p3>
+                    This Pygame program generates a maze that the user can then use the arrow keys to navigate the player (red) and reach the finish square (green).
+                    <br><br>
+                    The generation part of the program uses a recursive backtracking algorithm to create the maze, which can be viewed when "Show Maze Generation" is selected in the set up menu. 
+                    <br><br>
+                    <a href="ProgramRepos/Pygame-MazeGenerator/MazeGenerator.zip">Download for windows</a>
+                </p3>
+            </div>
+            <img src="Resources/Images/MazeGeneration.gif" class="displayRight">
+        </div>
+
+        <div class="leftRightPair">
+            <div class="displayRight textBlock">
+                <h3>Procedural Terrain Generation</h3>
+                <p3>
+                    
+                    This Panda3D program uses many rows of triangle strips, each vertex having a random height biased to its surrounding vertices. 
+                    The colour of each node is dependent on it's height, ranging from brown, to green, to grey, to white.
+                    <br><br>
+                    As the camera moves forwards, new triangle strips are created, and the previous triangle strips are destroyed. 
+                    To optimise this, I could edit the existing vertices without moving the camera - however the simulation still runs smoothly at 60fps on all tested systems.
+                    <br/><br/>
+                    <a href="ProgramRepos/Panda3d-ProceduralTerrainGeneration/TerrainGeneration.zip">Download for windows</a>
+                </p3>
+            </div>
+            <img src="Resources/Images/TerrainGeneration.gif" class="displayLeft">
+        </div>
+
+        <div class="leftRightPair"></div>
+
+
+    </div>
+
+    <footer class="darkBackground">
+
+        <div class="footerLinks navLinkGroup">
+            <ul class="SiteLinks">
+                <li><a href="README">README</a></li>
+            </ul>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
