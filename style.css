@@ -221,6 +221,11 @@ footer ul {
     display: inline-block;
 }
 
+footer ul li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
 
 footer a {
     text-decoration: none;
