@@ -56,24 +56,19 @@
 
     <div class="container">
 
-        <h2>Who am I?</h2>
+        <h2>C#</h2>
 
         <p2>
-            I am an A level student studying Computer Science, Physics, Mathematics and Chemistry. 
-            I have found a passion for programming, and have enjoyed creating games and implementing algorithms as a way to learn programming languages and any respective libraries.
-                <br>
-                <br>
-            I started learning Python (my very first programming language in 2018) and C++ late 2019. As of March 2020, 
-            I have begun learning C# - the language that I have decided to use for my A level Computer Science coursework.
-                <br>
-                <br>
-            Below are some of my favourite projects.
-            </p2>
+            I decided in March 2020, that C# would be the most suitable language for my A level coursework.
+            <br/><br/>
+            I started off by creating some simple text-based programs that run in the console. By May, I picked up xamarin for android and made a few apps.
+            <br/><br/>
+            Then in July I began creating webapps, and started my coursework.
+        </p2>
 
-            <br>
-            <br>
+        <br/><br/>
 
-
+        
         <div class="leftRightPair">
             <div class="displayLeft textBlock">
                 <h3>Graph Algorithms</h3>
@@ -110,27 +105,6 @@
 
         <div class="leftRightPair">
             <div class="displayLeft textBlock">
-                <h3>Conway's Game of Life</h3>
-                <p3>
-                    Conway's game of life is a zero player game, which takes a single input, then computes the following generations. It consists of a grid of cells which can either be alive or dead. When the next generation is calculated, the cells live or die depending on 3 rules:
-                    
-                    <ul>
-                        <li> If a living cell is surrounded by less than two other cells, it dies of underpopulation </li>
-                        <li> If a living cell is surrounded by more than three other cells, it dies of overpopulation </li>
-                        <li> - if a dead cell is surrounded by exactly three other cells, it is born</li>
-                    </ul>
-
-                    <a href="ProgramRepos/SFML-GameOfLife/GameOfLife.zip">Download for windows</a>
-                </p3>
-            </div>
-            <div class = "displayRight">                
-                <img src="Resources/Images/GameOfLife-Random.gif" style="float: left; padding-right: 10px; padding-top: 10px;">
-                <img src="Resources/Images/GameOfLife-Max.gif" style="float: right; padding-top: 10px;">
-            </div>
-        </div>
-
-        <div class="leftRightPair">
-            <div class="displayRight textBlock">
                 <h3>Dijktra's Shortest Path Algorithm</h3>
                 <p3>
                     Dijkstra's Shortest Path Algorithm is a method of finding for finding the shortest paths between nodes in a graph. 
@@ -139,45 +113,82 @@
                     <br><br>
                     The program will find the shortest path from a start point to an end point while avoiding obstcales (walls).
                     <br><br>
-                    <a href="ProgramRepos/Console-Dijkstra/Dijkstra.zip">Download for windows</a>
+                    <a href="ProgramRepos/Console-Dijkstra/Dijkstra.zip">Download for Windows</a>
                 </p3>
             </div>
-            <img src="Resources/Images/Dijkstra.gif" class="displayLeft">
-        </div>
-
-        <div class="leftRightPair">
-            <div class="displayLeft textBlock">
-                <h3>Maze Generator</h3>
-                <p3>
-                    This program generates a maze that the user can then use the arrow keys to navigate the player (red) and reach the finish square (green).
-                    <br><br>
-                    The generation part of the program uses a recursive backtracking algorithm to create the maze, which can be viewed when "Show Maze Generation" is selected in the set up menu. 
-                    <br><br>
-                    <a href="ProgramRepos/Pygame-MazeGenerator/MazeGenerator.zip">Download for windows</a>
-                </p3>
-            </div>
-            <img src="Resources/Images/MazeGeneration.gif" class="displayRight">
+            <img src="Resources/Images/Dijkstra.gif" class="displayRight">
         </div>
 
         <div class="leftRightPair">
             <div class="displayRight textBlock">
-                <h3>Garden Defence</h3>
+                <h3>Notes App</h3>
                 <p3>
-                    Garden Defence is my own tower defence strategy game where players place different gnomes into the garden to fight the attacking insects. 
-                    <br><br>
-                    Money is earned from killing enemies, and can be used to buy more gnomes or upgrade existing gnomes.               
-                    Upgrades can also be bought by clicking the existing gnome, clicking the upgrade arrow, and then choosing between increasing range or power.
-                    <br><br>
-                    <a href="ProgramRepos/Pygame-GardenDefence/GardenDefence.zip">Download for windows</a>
+                    Notes!" is a note taking app that lets you create new notes, save those notes, and edit existing notes created with the app. Each note has a title and body.
+                    <br/><br/>
+                    The app works by saving text files with the title of each note being the name of the text file (i.e. "title.txt") and the content of the note saved inside the document.
                 </p3>
             </div>
-            <img src="Resources/Images/GardenDefence.png" class="displayLeft">
+            <img src="Resources/Images/NotesApp.png" class="displayLeft">
         </div>
 
-       
+        <div class="leftRightPair">
+            <div class="displayLeft textBlock">
+                <h3>Dungeon Explorer</h3>
+                <p3>
+                    Dungeon Explorer is a simple game played in the console.
+                    <br/><br/>
+                    The player navigates (WASD) through a series of procedurally generated rooms, encountering a variety of enemy types which can be killed (Arrow Keys).
+                    <br/><br/>
+                    The goal is to kill the most enemies as possible before dying
+                    <br/><br/>
+                    <a href="ProgramRepos/Console-DungeonExplorer/DungeonExplorer.exe">Download for Windows</a>
+                </p3>
+            </div>
+            <div class="displayRight textBlock"> <!--Should put a GIF here instead-->
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <td>Enemy</td>
+                            <td>Description</td>
+                            <td>Spawn rate</td>
+                        </tr>
+                    </thead>
+                    <tbody> 
+                        <tr>
+                            <td>ѫ</td>
+                            <td>Fast, but not very much health and cannot shoot. </td>
+                            <td>50 %</td>
+                        </tr>
+                        <tr>
+                            <td>Ѫ</td>
+                            <td>Slow, but double health and cannot shoot at the player.  </td>
+                            <td>35 %</td>
+                        </tr>
+                        <tr>
+                            <td>Ж</td>
+                            <td>Won't move, but will shoot rapidly in the player's direction.</td>
+                            <td>10 %</td>
+                        </tr>
+                        <tr>
+                            <td>Ӝ  </td>
+                            <td>Won't move, will shoot at a slower rate, but in all directions.</td>
+                            <td>5 %</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+
+        <div class="leftRightPair">
+            <h3>Other, less noteworthy projects:</h3>
+            <ul>
+                <li><a href="https://github.com/owenpauptit/mastermind">Mastermind</a></li>
+            </ul>
+        </div>
 
 
-        <div class="leftRightPair"></div>>
+        <div class="leftRightPair"></div>
 
 
     </div>
