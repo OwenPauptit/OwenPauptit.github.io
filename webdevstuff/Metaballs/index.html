@@ -1,0 +1,107 @@
+<div id="canvDiv" style="text-align: center;" onmouseover="startRunning()" onmouseout="stopRunning()">
+    <div style="flex-grow: 1">
+        <canvas id="canvas" width="600" height="400" style="margin: auto;"></canvas>
+
+    </div>
+    </div>
+<script src="blob.js"></script>
+<script src="vector.js"></script>
+
+<script>
+
+    let blobs = [];
+    let running = false;
+
+    startRunning = function(e)
+    {
+        running = true;
+    }
+
+    stopRunning = function(e)
+    {
+        running = false;
+    }
+
+    window.onload = function()
+    {
+        canvas = document.getElementById("canvas");
+        ctx = canvas.getContext("2d");
+
+        div = document.getElementById("canvDiv");
+        div.width = window.innerWidth * 0.98;
+        div.height = window.innerHeight * 0.98;
+
+        for (var i = 0; i < 8; i++)
+        {
+            blobs.push(new Blob(Math.random()*canvas.width,Math.random()*canvas.height));
+        }
+        drawPixels();
+        var loop = setInterval(gameLoop,1000/40)
+    }
+
+    gameLoop = function()
+    {
+        if (running)
+        {
+        drawPixels();
+        for (var i = 0; i < blobs.length; i++)
+        {
+            blobs[i].update(canvas.width,canvas.height);
+        }
+        }
+    }
+
+    drawPixels = function()
+    {
+
+        for (var i = 0; i < canvas.width; i+=4)
+        {
+            let dx = []
+            for (var k = 0; k < blobs.length; k++)
+            {
+                dx[k] = blobs[k].pos.x - i
+                dx[k] *= dx[k];
+            }
+            for (var j = 0; j < canvas.height; j+=4)
+            {
+                var sum = 0;
+                let d = [];
+                for (var k = 0; k < blobs.length; k++)
+                {
+                    d[k] = blobs[k].pos.y - j
+                    d[k] *= d[k];
+                    d[k] += dx[k];
+                    sum += 10000 * blobs[k].r / d[k];
+
+                }
+                var r = sum;
+                
+                if (r > 340)
+                {
+                    r = 340;
+                }
+                else if (r < 50)
+                {
+                    r /= 1.01;
+                }
+                ctx.fillStyle = "hsl("+r+",100%,50%)";
+                ctx.fillRect(i,j,4,4);
+            }
+        }
+    }
+
+    draw = function()
+    {
+        ctx.fillStyle = "black";
+        ctx.fillRect(0,0,canvas.width,canvas.height);
+    }
+
+    ToHex = function(x)
+    {
+        var digits = ["0","1","2","3","4","5","6","7","8","9","a","b","c","d","e","f"];
+        var str = digits[(x % 16)];
+        x = Math.floor(x/16);
+        str = digits[x] + str;
+        return str;
+    }
+</script>

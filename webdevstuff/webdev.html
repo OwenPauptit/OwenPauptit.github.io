@@ -10,10 +10,14 @@
         <h1 id="AutoAgentTitle"style="position: relative;" >Evolution of Autonomous Agents</h1>
     </div>
 
-
     <div style="margin-left: auto; margin-top: 5%;text-align: center;">
         <object id="RayCast" type="text/html" ></object>
         <h1 id="RayCastTitle"style="position: relative;" >Ray Casting</h1>
+    </div>
+
+    <div style="margin-left: auto; margin-top: 5%;text-align: center;">
+        <object id="MetaBall" type="text/html" ></object>
+        <h1 id="MetaBallTitle"style="position: relative;" >Metaballs</h1>
     </div>
 
 </body>
@@ -44,6 +48,13 @@
         objs[2].data = "RayCasting/index.html";
         titles.push(document.getElementById("RayCastTitle"));
         titles[2].style.top = - window.innerHeight * 0.5
+        
+        objs.push(document.getElementById("MetaBall"));
+        objs[3].width = window.innerWidth * 0.99;
+        objs[3].height = window.innerHeight * 0.99;
+        objs[3].data = "Metaballs/index.html";
+        titles.push(document.getElementById("MetaBallTitle"));
+        titles[3].style.top = - window.innerHeight * 0.8
 
         document.addEventListener("scroll", function(event)
         {
@@ -65,6 +76,12 @@
             }
         });
     }
+
+
+
+
+
+
 </script>
 
 <style>
