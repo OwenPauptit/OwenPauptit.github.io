@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <canvas id="canvas"></canvas>
+        <br/>
+        <label>Mass 1: &nbsp&nbsp</label><input id="mass1" type="range" min="3" max="30" step="0.5" value="10" style="margin-right: 30px;"/>
+        <label>Angle 1: &nbsp&nbsp</label><input id="angle1" type="range" min="-3.15" max="3.15" value="2" step="0.05"/><br/>
+        <label>Mass 2: &nbsp&nbsp</label><input id="mass2" type="range" min="3" max="30" step="0.5" value="10" style="margin-right: 30px;"/>
+        <label>Angle 2: &nbsp&nbsp</label><input id="angle2" type="range" min="-3.15" max="3.15" step="0.05" value="-1"/><br/><br/>
+        <label>Length 1: &nbsp&nbsp</label><input id="length1" type="range" min="10" max="200" value="100"/><br/>
+        <label>Length 2: &nbsp&nbsp</label><input id="length2" type="range" min="10" max="200" value="100"/><br/><br/>
+        <button onclick="reset()">Reset</button>
+        <script src="js/doublependulum.js"></script>
+        <script>
+
+            var m1 = document.getElementById("mass1");
+            var m2 = document.getElementById("mass2");
+            var a1 = document.getElementById("angle1");
+            var a2 = document.getElementById("angle2");
+            var r1 = document.getElementById("length1");
+            var r2 = document.getElementById("length2");
+            dp = new DoublePendulum(m1.value, m2.value, r1.value, r2.value, a1.value, a2.value);
+
+            window.onload = function()
+            {
+                canvas = document.getElementById("canvas");
+                canvas.width = window.innerWidth * 0.97;
+                canvas.height = window.innerHeight * 0.7;
+                ctx = canvas.getContext("2d");
+                ctx.translate(canvas.width/2, canvas.height/3);
+
+                reset();
+                draw();
+                var loop = setInterval(gameLoop,1000/60);
+            }
+
+            gameLoop = function()
+            {
+                dp.update();
+                draw();
+            }
+
+            draw = function()
+            {
+                ctx.fillStyle = "black";
+                ctx.fillRect(-canvas.width/2,-canvas.height/3,canvas.width,canvas.height);
+                dp.draw(ctx);
+            }
+
+            reset = function()
+            {
+                dp = new DoublePendulum(parseInt(m1.value), parseInt(m2.value), parseInt(r1.value), parseInt(r2.value), parseInt(a1.value), parseInt(a2.value));
+            }
+        </script>
+    </body>
+</html>
