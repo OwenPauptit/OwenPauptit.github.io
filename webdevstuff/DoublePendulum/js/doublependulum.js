@@ -55,7 +55,7 @@ class DoublePendulum
         this.a2 += this.a2_v;
     }
 
-    draw(ctx)
+    draw(ctx, pendulumColour="white", tailColour="#aaaaaa")
     {
 
         var x1 = this.r1 * Math.sin(this.a1);
@@ -67,7 +67,7 @@ class DoublePendulum
         {
             this.tail.shift();
         }
-        ctx.strokeStyle = "#aaaaaa";
+        ctx.strokeStyle = tailColour;
         ctx.lineWidth = 1;
         for (var i = 1; i < this.tail.length; i++)
         {
@@ -77,8 +77,8 @@ class DoublePendulum
             ctx.stroke();
         }
         ctx.lineWidth = 2;
-        ctx.fillStyle = "white";
-        ctx.strokeStyle = "white";
+        ctx.fillStyle = pendulumColour;
+        ctx.strokeStyle = pendulumColour;
         ctx.beginPath();
         ctx.arc(0, 0, 10, 0, 2 * Math.PI);
         ctx.fill();

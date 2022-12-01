@@ -1,8 +1,12 @@
 <!Doctype Html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
 <div>
 <div class="container full">
-  
-  <canvas style="position: absolute; right: 5%" id="canvas"></canvas>
+    <canvas  style="position: absolute; right: 5%" id="canvas"></canvas>
+    <!-- <br/>
+    A Javascript Double Pendulum -->
   
   <div class="title">
     
@@ -28,11 +32,12 @@
     </div>
     
     
-<div class="container half" style="margin-top:5%">
-  <a>About Me</a>
-  <a>Full Stack</a>
+<div class="container partial" style="margin-top:5%">
+  <a href="aboutme.html">About Me</a>
+  <a href="blazorwebapps.html">Blazor Web Apps</a>
+  <a href="desktopapps.html">Desktop Apps</a>
   <a>Web Trinkets</a>
-  <a>Executables</a>
+  <a>Full Stack</a>
   <a>Research</a>
 </div>
 
@@ -61,10 +66,22 @@
   let dp;
   let loop;
 
+  var colour = "#cfccc6";
+
   window.onload = function()
   {
     setup()
     window.addEventListener("resize", resize)
+  }
+
+  highlight = function()
+  {
+    colour = "#d46c04";
+  }
+
+  unhighlight = function()
+  {
+    colour = "#cfccc6";
   }
 
   resize = function()
@@ -102,7 +119,7 @@
   {
       ctx.fillStyle = "#242526";
       ctx.fillRect(-canvas.width/2,-canvas.height/3,canvas.width,canvas.height);
-      dp.draw(ctx);
+      dp.draw(ctx, colour, colour);
   }
 
   reset = function()
@@ -111,110 +128,3 @@
   }
 </script>
 
-<style>
-body
-{
-  font-family: sans-serif;
-  font-weight: bold;
-  background: #242526;
-}
-
-a{
-  color: #cfccc6;
-  text-decoration: none;
-  border: 2pt solid #cfccc6;
-  padding: 5pt;
-  font-size: 18pt;
-  display: inline-block;
-  margin-top: 5%;
-  margin: 1%;
-
-}
-
-a:hover{
-  color: #d46c04;
-  border: 2pt solid #d46c04;
-  transform: scale(1.1);
-  transition: 200ms ease-in-out;
-}
-
-.container
-{
-  display: inline-block;
-  position: relative;
-}
-
-.half
-{
-  width: 80%;
-}
-
-.full
-{
-  width: 90%;
-}
-
-.title
-{
-  position: absolute;
-  margin-top: 10%;
-  left:10%;
-}
-
-
-.smiley
-{
-  display: inline-block;
-  margin: None;
-  padding: None;
-  width: 0;
-  font-size: 24pt;
-  transform: rotate(90deg) translateY(70px) translateX(-40px);
-  color: #cfccc6;
-}
-
-.big
-{
-  font-size: 81pt;
-}
-
-.small
-{
-  font-size: 18pt;
-}
-
-.letter
-{
-  display: inline-block;
-  margin: None;
-  padding: None;
-  color: #cfccc6;
-}
-
-.letter:hover
-{
-  color: #d46c04;
-  transform: scale(1.2);
-  transition: 200ms ease-in-out;
-}
-
-.r
-{
-  transform: translateX(-25px);
-}
-
-.r:hover
-{
-  transform: translateX(-25px) scale(1.2);
-}
-
-.l
-{
-  transform: none
-}
-
-.l:hover
-{
-  transform: scale(1.2)
-}
-</style>
