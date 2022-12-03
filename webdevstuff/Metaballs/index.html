@@ -1,9 +1,6 @@
-<div id="canvDiv" style="text-align: center;" onmouseover="startRunning()" onmouseout="stopRunning()">
-    <div style="flex-grow: 1">
-        <canvas id="canvas" width="600" height="400" style="margin: auto;"></canvas>
-
-    </div>
-    </div>
+<body style="margin: 0; padding: 0;">
+    <canvas onmouseover="startRunning()" onmouseout="stopRunning()" id="canvas" width="300" height="200" style="margin: auto;"></canvas>
+</body>
 <script src="blob.js"></script>
 <script src="vector.js"></script>
 
@@ -11,6 +8,7 @@
 
     let blobs = [];
     let running = false;
+    let pixelSize = 4;
 
     startRunning = function(e)
     {
@@ -27,16 +25,18 @@
         canvas = document.getElementById("canvas");
         ctx = canvas.getContext("2d");
 
-        div = document.getElementById("canvDiv");
-        div.width = window.innerWidth * 0.98;
-        div.height = window.innerHeight * 0.98;
+
+        canvas.width = window.innerWidth * 0.999;
+        canvas.height = window.innerHeight * 0.999;
+
+        pixelSize = Math.sqrt(Math.floor((canvas.width * canvas.height) / 1500));
 
         for (var i = 0; i < 8; i++)
         {
             blobs.push(new Blob(Math.random()*canvas.width,Math.random()*canvas.height));
         }
         drawPixels();
-        var loop = setInterval(gameLoop,1000/40)
+        var loop = setInterval(gameLoop,1000/10);
     }
 
     gameLoop = function()
@@ -54,7 +54,7 @@
     drawPixels = function()
     {
 
-        for (var i = 0; i < canvas.width; i+=4)
+        for (var i = 0; i < canvas.width; i+=pixelSize)
         {
             let dx = []
             for (var k = 0; k < blobs.length; k++)
@@ -62,7 +62,7 @@
                 dx[k] = blobs[k].pos.x - i
                 dx[k] *= dx[k];
             }
-            for (var j = 0; j < canvas.height; j+=4)
+            for (var j = 0; j < canvas.height; j+=pixelSize)
             {
                 var sum = 0;
                 let d = [];
@@ -84,8 +84,9 @@
                 {
                     r /= 1.01;
                 }
+                console.log(pixelSize);
                 ctx.fillStyle = "hsl("+r+",100%,50%)";
-                ctx.fillRect(i,j,4,4);
+                ctx.fillRect(i,j,pixelSize,pixelSize);
             }
         }
     }

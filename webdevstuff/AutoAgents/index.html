@@ -1,6 +1,7 @@
 
-
-<canvas class="canvas" id="canvas" style="margin: 0 0 0 0; padding: 0 0 0 0;"></canvas>
+<body style="margin: 0; padding: 0;">
+    
+<canvas class="canvas" id="canvas" style="margin: 0 0 0 0; padding: 0 0 0 0;" ></canvas>
 <!--
 <br/><br/>
 <label>Show Vehicle Attributes</label>
@@ -27,6 +28,7 @@
 <button onclick="reset()">Reset</button>
 <br/>-->
 
+</body>
 <script src="vector.js"></script>
 <script src="vehicle.js"></script>
 
@@ -73,8 +75,8 @@ window.onload = function (){
         canvas = document.getElementById("canvas");
         ctx = canvas.getContext("2d");
 
-        canvas.width = window.innerWidth * 0.98;
-        canvas.height = window.innerHeight * 0.98;
+        canvas.width = window.innerWidth * 0.998;
+        canvas.height = window.innerHeight * 0.998;
 /*
         showAttrCheckbox = document.getElementById("showAttrCheckbox");
         mutRateSlider = document.getElementById("mutationRateSlider");
@@ -103,7 +105,7 @@ window.onload = function (){
             poison.push(new Vector(x,y));
         }
 
-        var loop = setInterval(gameLoop, 1000/80);
+        var loop = setInterval(gameLoop, 1000/30);
     }
 
     function addFood()

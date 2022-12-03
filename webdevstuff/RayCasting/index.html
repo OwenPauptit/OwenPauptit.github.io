@@ -1,4 +1,7 @@
-<canvas id="canvas"></canvas>
+<body style="margin: 0; padding: 0;">
+
+    <canvas id="canvas"></canvas>
+</body>
 
 <script src="boundary.js"></script>
 <script src="vector.js"></script>
@@ -15,8 +18,8 @@
         canvas = document.getElementById("canvas");
         ctx = canvas.getContext("2d");
 
-        canvas.width = window.innerWidth * 0.98;
-        canvas.height = window.innerHeight * 0.98;
+        canvas.width = window.innerWidth * 0.998;
+        canvas.height = window.innerHeight * 0.998;
 
         //boundaries.push(new Boundary(300,100,300,300));
         walls.push(new Boundary(-1,-1,canvas.width+1,-1));

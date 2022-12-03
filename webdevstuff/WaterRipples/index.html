@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html>
-    <body>
-        <style>
-
-        </style>
+<body style="margin: 0; padding: 0;">
         <canvas id="canvas" onmouseover="startRunning()" onmouseout="stopRunning()"></canvas>
+</body>
         <script src="js/ripple.js"></script>
         <script>
 
@@ -24,10 +20,14 @@
             {
                 canvas = document.getElementById("canvas");
                 ctx = canvas.getContext("2d");
-                canvas.width = window.innerWidth * 0.97;
-                canvas.height = window.innerHeight * 0.7;
+                canvas.width = window.innerWidth * 0.999;
+                canvas.height = window.innerHeight * 0.999;
+          
+                pixelSize = Math.ceil(Math.sqrt((canvas.width * canvas.height) / 2000));
 
+                console.log("HERE");
                 ripple = new Ripple(canvas.width, canvas.height, pixelSize);
+                ripple.draw(ctx);
                 //console.log("here");
                 //ripple.draw(ctx);
                 //update();
@@ -56,5 +56,4 @@
 
             }
         </script>
-    </body>
-</html>
+    

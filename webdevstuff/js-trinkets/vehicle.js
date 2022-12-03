@@ -53,19 +53,19 @@ class Vehicle
 
     Draw(ctx)
     {
-        // var theta = Vector.GetAngle(this.velocity);
+        var theta = Vector.GetAngle(this.velocity);
 
-        // let point1 = new Vector(this.r*2,0);
-        // let point2 = new Vector(-this.r*2,-this.r);
-        // let point3 = new Vector(-this.r*2,this.r);
+        let point1 = new Vector(this.r*2,0);
+        let point2 = new Vector(-this.r*2,-this.r);
+        let point3 = new Vector(-this.r*2,this.r);
 
-        // point1 = Vector.Rotate(point1,theta);
-        // point2 = Vector.Rotate(point2,theta);
-        // point3 = Vector.Rotate(point3,theta);
+        point1 = Vector.Rotate(point1,theta);
+        point2 = Vector.Rotate(point2,theta);
+        point3 = Vector.Rotate(point3,theta);
 
-        // point1 = Vector.Add(point1,this.position);
-        // point2 = Vector.Add(point2,this.position);
-        // point3 = Vector.Add(point3,this.position);
+        point1 = Vector.Add(point1,this.position);
+        point2 = Vector.Add(point2,this.position);
+        point3 = Vector.Add(point3,this.position);
 
         ctx.fillStyle = "white";
         ctx.beginPath();

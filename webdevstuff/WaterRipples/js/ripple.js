@@ -5,9 +5,12 @@ class Ripple
         this.canvasWidth = width;
         this.canvasHeight = height;
         this.pixelSize = pixelSize;
-        this.cols = Math.floor(width/pixelSize)
-        this.rows = Math.floor(height/pixelSize);
+        this.cols = Math.ceil(width/pixelSize)+2;
+        this.rows = Math.ceil(height/pixelSize)+2;
         this.damping = 0.97;
+        console.log("Width,height: ", this.canvasWidth, this.canvasHeight);
+        console.log("psize ", this.pixelSize);
+        console.log("rows, cols ", this.rows,this.cols);
 
         this.current = [];
         this.previous = [];
@@ -62,7 +65,7 @@ class Ripple
                 var b = this.current[i][j];
                 var g = this.current[i][j] * 0.8;
                 ctx.fillStyle = "rgb(" + String(r) + "," + String(g) + "," + String(b) + ")";
-                ctx.fillRect(i*this.pixelSize,j*this.pixelSize,this.pixelSize,this.pixelSize);
+                ctx.fillRect((i-1)*this.pixelSize,(j-1)*this.pixelSize,this.pixelSize,this.pixelSize);
             
 
 
