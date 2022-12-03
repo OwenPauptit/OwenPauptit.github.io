@@ -1,0 +1,150 @@
+<body style="margin: 0; padding: 0">
+<canvas id="canvas" onclick="setup()"></canvas>
+</body>
+<!-- <br/><br/>
+<label>Number of points in next iteration</label>
+<input type="range" min="1" max="300" value="100" id="pointSlider">
+<br/><br/>
+<button onclick="setup()">Go Again!</button> -->
+
+<script src="vector.js"></script>
+
+<script>
+
+    let points;
+    let hull = []
+
+    let NUMPOINTS;
+
+    let leftMost;
+    let currentVertex;
+    let index;
+    let nextIndex = -1;
+    let nextVertex;
+    let checking;
+    let finished;
+
+    window.onload = function (){
+        canvas = document.getElementById("canvas");
+        ctx = canvas.getContext("2d");
+
+        canvas.width = window.innerWidth * 0.999;
+        canvas.height = window.innerHeight * 0.999;
+
+        //pointsSlider = document.getElementById("pointSlider");
+
+
+        setup();
+
+        var loop = setInterval(gameLoop, 1000/30);
+    }
+
+    setup = function()
+    {
+        points = [];
+        hull = [];
+        finished = false;
+
+        let buffer = 20;
+        NUMPOINTS = 100;//pointsSlider.value;
+
+        for (var i = 0; i < NUMPOINTS; i++)
+        {
+            points.push(new Vector(Math.random()*(canvas.width-buffer * 2)+buffer,Math.random()*(canvas.height-buffer*2)+buffer));
+        }
+
+        points.sort((a,b) => a.x - b.x);
+        leftMost = points[0];
+        currentVertex = leftMost;
+        hull.push(currentVertex);
+        nextVertex = points[1];
+        index = 2;
+
+    }
+
+    gameLoop = function()
+    {
+        if (!finished)
+        {
+
+            checking = points[index];
+
+            draw();
+
+            a = Vector.Subtract(nextVertex,currentVertex);
+            b = Vector.Subtract(checking,currentVertex);
+            let cross = Vector.CrossProduct(a,b);
+            if (cross.z < 0)
+            {
+                nextVertex = checking;
+                nextIndex = index;
+            }
+            index ++;
+
+            if (index == points.length)
+            {
+                hull.push(nextVertex);
+                currentVertex = nextVertex;
+                index = 0;
+                nextVertex = leftMost;
+
+                if (hull[0] == currentVertex)
+                {
+                    finished = true;
+                    checking = currentVertex;
+                    draw();
+                }
+            }
+        }
+
+        
+    }
+
+    draw = function()
+    {
+        ctx.fillStyle = "black";
+        ctx.fillRect(0,0,canvas.width,canvas.height);
+
+        ctx.strokeStyle = "blue";
+        ctx.fillStyle = "#aa00ff33"
+        ctx.beginPath();
+        ctx.moveTo(hull[0].x,hull[0].y);
+        for (var i = 1; i < hull.length; i++)
+        {
+            ctx.lineTo(hull[i].x,hull[i].y);
+        }
+        ctx.stroke();
+        ctx.fill();
+
+        ctx.strokeStyle = "white";
+        ctx.beginPath();
+        ctx.moveTo(currentVertex.x,currentVertex.y);
+        ctx.lineTo(nextVertex.x,nextVertex.y);
+        ctx.stroke();
+
+        ctx.strokeStyle = "lime";
+        ctx.beginPath();
+        ctx.moveTo(currentVertex.x,currentVertex.y);
+        ctx.lineTo(checking.x,checking.y);
+        ctx.stroke();
+
+        ctx.fillStyle = "white";
+        for(var i = 0; i < points.length; i++)
+        {
+            ctx.beginPath();
+            ctx.arc(points[i].x,points[i].y,4,0,Math.PI * 2,true);
+            ctx.fill();
+        }
+
+        ctx.fillStyle = "orange";
+        ctx.beginPath();
+        ctx.arc(leftMost.x,leftMost.y,6,0,Math.PI * 2,true);
+        ctx.fill();
+        
+        ctx.fillStyle = "cyan";
+        ctx.beginPath();
+        ctx.arc(currentVertex.x,currentVertex.y,6,0,Math.PI * 2,true);
+        ctx.fill();
+    }
+
+</script>

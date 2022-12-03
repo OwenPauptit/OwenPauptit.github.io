@@ -1,0 +1,99 @@
+
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body style="margin: 0; padding:0">
+        <canvas id="canvas"></canvas>
+    </body>
+        <script src="js/quadtree.js"></script>
+        <script>
+
+            let mousex = 0;
+            let mousey = 0;
+            let prevx = 0;
+            let prevy = 0;
+            let boundary = new Rectangle(200,200,200,200);
+            let qt = new Quadtree(boundary,4);
+            let points = [];
+
+            let NUMPOINTS = 20;//30;
+
+            window.onload = function()
+            {
+                canvas = document.getElementById("canvas");  
+                canvas.width = window.innerWidth * 0.999;
+                canvas.height = window.innerHeight * 0.999;
+                ctx = canvas.getContext("2d");
+                ctx.fillStyle = "black";
+                ctx.fillRect(0,0,canvas.width,canvas.height);
+
+                var halfW = Math.floor(canvas.width/2);
+                var halfH = Math.floor(canvas.height/2);
+                boundary = new Rectangle(halfW,halfH,halfW, halfH);
+
+                qt = new Quadtree(boundary, 4);
+
+
+                for (let i = 0; i < NUMPOINTS; i++)
+                {
+                    let p = new Point(Math.floor(Math.random()*canvas.width),Math.floor(Math.random()*canvas.height), canvas.width,canvas.height);
+                    qt.insert(p);
+                    points.push(p);
+                }
+                qt.show(ctx);
+
+                /*document.addEventListener("mousemove", () => {
+                    mousex = event.clientX - 10; // Gets Mouse X
+                    mousey = event.clientY - 10; // Gets Mouse Y
+                });*/
+                
+                var loop = setInterval(update,1000/30);
+            }
+
+            update = function()
+            {
+                if (mousex != prevx || mousey != prevy)
+                {
+                    prevx = mousex;
+                    prevy = mousey;
+                    if (mousex > canvas.width)
+                    {
+                        mousex = canvas.width;
+                    }
+                    if (mousey > canvas.height)
+                    {
+                        mousey = canvas.height;
+                    }
+                    qt.insert(new Point(mousex, mousey));
+                    points.push(new Point(mousex, mousey));
+                    
+                }
+
+                /*let p = qt.update()[0];
+                for (var i = 0; i < p.length; i++)
+                {
+                    if (qt.insert(p[i]))
+                    {
+                        console.log(p[i],"success");
+                    }
+                }*/
+                qt = new Quadtree(boundary,4);
+                for (var i = 0; i < points.length; i++)
+                {
+                    points[i].move();
+                    qt.insert(points[i]);
+                }
+
+
+                draw();
+            }
+
+            draw = function()
+            {
+                ctx.fillStyle = "black";
+                ctx.fillRect(0,0,canvas.width,canvas.height);
+                qt.show(ctx);
+            }
+
+
+        </script>
