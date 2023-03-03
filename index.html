@@ -1,207 +1,130 @@
-<!DOCTYPE html>
-<html lang="en">
+<!Doctype Html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<div>
+<div class="container full">
+    <canvas  style="position: absolute; right: 5%" id="canvas"></canvas>
+    <!-- <br/>
+    A Javascript Double Pendulum -->
+  
+  <div class="title">
+    
+    <div class="line">
+      <div class="letter small l">Hi,</div>
+      <div class="letter small l">I'm</div>
+    </div>
+    <div class="line">
+      <div class="letter big l">O
+      
+      <!-- <div class="smiley">:)</div> -->
+      </div>
+      <div class="letter big l">w</div>
+      <div class="letter big l">e</div>
+      <div class="letter big l">n</div>
+    </div>
+    <div class="line">
+      <div class="letter small l">and</div>
+      <div class="letter small l">I</div>
+      <div class="letter small l">like</div>
+      <div class="letter small l">to</div>
+      <div class="letter small l">code.</div>
+    </div>
+    
+    
+<div class="container partial buttons" style="margin-top:5%">
+  <a href="aboutme.html">About Me</a>
+  <a href="blazorwebapps.html">Blazor Web Apps</a>
+  <a href="algorithms.html">Algorithm Visualisation</a>
+  <a href="jstrinkets.html">Javascript Trinkets</a>
+  <a href="physsim.html">PhysSim</a>
+  <a>Research</a>
+</div>
 
-    <link href="style.css" rel="stylesheet"  type="text/css">
-    <title>Owen Pauptit</title>
-    
-    <script type="text/javascript">
-            if (screen.width <= 699) {
-                document.location = "home";
-            }
-    </script>
-    
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-166874064-1"></script>
+
+  </div>
+<!-- </div>
+<div class="container">
+  <a>About Me</a>
+  <a>Web trinkets</a>
+  <a>Full Stack</a>
+  <a>Executables</a>
+</div> -->
+</div>
+
+<script src="DoublePendulum/js/doublependulum.js"></script>
+
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-166874064-1');
+  var m1 = 15;
+  var m2 = 10;
+  var a1 = 2;
+  var a2 = -1;
+  var r1 = 100;
+  var r2 = 100;
+
+  let dp;
+  let loop;
+
+  var colour = "#cfccc6";
+
+  window.onload = function()
+  {
+    setup()
+    window.addEventListener("resize", resize)
+  }
+
+  highlight = function()
+  {
+    colour = "#d46c04";
+  }
+
+  unhighlight = function()
+  {
+    colour = "#cfccc6";
+  }
+
+  resize = function()
+  {
+    clearInterval(loop);
+    setup();
+  }
+
+  setup = function()
+  {
+    canvas.width = 0;
+    canvas.height = 0;
+      if (window.innerWidth > 1000)
+      {
+        
+      canvas = document.getElementById("canvas");
+      canvas.width = 450;
+      canvas.height=350;
+      ctx = canvas.getContext("2d");
+      ctx.translate(canvas.width/2, canvas.height/3);
+
+      reset();
+      draw();
+      loop = setInterval(gameLoop,1000/60);
+      }
+  }
+
+  gameLoop = function()
+  {
+      dp.update();
+      draw();
+  }
+
+  draw = function()
+  {
+      ctx.fillStyle = "#242526";
+      ctx.fillRect(-canvas.width/2,-canvas.height/3,canvas.width,canvas.height);
+      dp.draw(ctx, colour, colour);
+  }
+
+  reset = function()
+  {
+      dp = new DoublePendulum(m1, m2, r1, r2, a1, a2);
+  }
 </script>
 
-
-
-</head>
-<body class="lightBackground">
-
-    <header class="darkBackground">
-        <div class="container">
-            
-            <h1>Owen Pauptit</h1>
-
-            <p1>A portfolio of all my significant programming projects</p1>
-
-            <br>
-
-            <nav class="navLinkGroup">
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="#">languages</a>
-                        <ul class="dropdown darkBackground">
-                            <li><a href="/python.html">Python</a></li>
-                            <li><a href="/cpp.html">C++</a></li>
-                            <li><a href="/cs.html">C#</a></li>
-                        </ul>    
-                    </li>
-                    <li><a href="home">Markdown Website</a></li>
-                </ul>
-            </nav>
-        </div>
-
-    </header>
-
-    <div class="container">
-
-        <h2>Who am I?</h2>
-
-        <p2>
-            I am an A level student studying Computer Science, Physics, Mathematics and Chemistry. 
-            I have found a passion for programming, and have enjoyed creating games and implementing algorithms as a way to learn programming languages and any respective libraries.
-                <br>
-                <br>
-            I started learning Python (my very first programming language in 2018) and C++ late 2019. As of March 2020, 
-            I have begun learning C# - the language that I have decided to use for my A level Computer Science coursework.
-                <br>
-                <br>
-            Below are some of my favourite projects.
-            </p2>
-
-            <br>
-            <br>
-
-
-        <div class="leftRightPair">
-            <div class="displayLeft textBlock">
-                <h3>Graph Algorithms</h3>
-                <p3>
-                    After watching MIT Open CourseWare Mathematics for Computer Science lectures on Graph Theory, I decided to implement some of the algorithms I learned into a webapp. The website allows the user to create and move nodes, and construct weighted edges between nodes. The algorithms currently implemented are
-                    
-                    <ul>
-                        <li> Greedy colouring algorithm </li>
-                        <li> Random spanning tree algorithm </li>
-                        <li> Greedy minimum weight spanning tree algorithm </li>
-                    </ul>
-
-                    <a href="https://owenpauptit.github.io/GraphAlgorithms/">The webapp can be found here</a>
-                </p3>
-            </div>
-            <img src="Resources/Images/GraphAlgorithms.gif" class="displayRight">
-        </div>
-
-        <div class="leftRightPair">
-            <div class="displayRight textBlock">
-                <h3>Chemical Molecule Drawing</h3>
-                <p3>
-                    I modified my graph algorithm code to display chemical molecules. The user can add a variety of atoms and create bonds between them. 
-                    <br/><br/>
-                    Bonds can be created by selected "Add Bond", then clicking on two different atoms. 
-                    <br/><br/>
-                    Additional bonds between the same atoms (i.e. double bonds, triple bonds etc.) can be added in the same way.
-                    <br/><br/>
-                    <a href="https://owenpauptit.github.io/MoleculeDrawing/">The webapp can be found here</a>
-                </p3>
-            </div>
-            <img src="Resources/Images/MoleculeDrawing.gif" class="displayLeft">
-        </div>
-
-        <div class="leftRightPair">
-            <div class="displayLeft textBlock">
-                <h3>Conway's Game of Life</h3>
-                <p3>
-                    Conway's game of life is a zero player game, which takes a single input, then computes the following generations. It consists of a grid of cells which can either be alive or dead. When the next generation is calculated, the cells live or die depending on 3 rules:
-                    
-                    <ul>
-                        <li> If a living cell is surrounded by less than two other cells, it dies of underpopulation </li>
-                        <li> If a living cell is surrounded by more than three other cells, it dies of overpopulation </li>
-                        <li> - if a dead cell is surrounded by exactly three other cells, it is born</li>
-                    </ul>
-
-                    <a href="ProgramRepos/SFML-GameOfLife/GameOfLife.zip">Download for windows</a>
-                </p3>
-            </div>
-            <div class = "displayRight">                
-                <img src="Resources/Images/GameOfLife-Random.gif" style="float: left; padding-right: 10px; padding-top: 10px;">
-                <img src="Resources/Images/GameOfLife-Max.gif" style="float: right; padding-top: 10px;">
-            </div>
-        </div>
-
-        <div class="leftRightPair">
-            <div class="displayRight textBlock">
-                <h3>Dijktra's Shortest Path Algorithm</h3>
-                <p3>
-                    Dijkstra's Shortest Path Algorithm is a method of finding for finding the shortest paths between nodes in a graph. 
-                    <br><br>
-                    In this implementation, however, I use a matrix, where each node is two █ characters in the console. 
-                    <br><br>
-                    The program will find the shortest path from a start point to an end point while avoiding obstcales (walls).
-                    <br><br>
-                    <a href="ProgramRepos/Console-Dijkstra/Dijkstra.zip">Download for windows</a>
-                </p3>
-            </div>
-            <img src="Resources/Images/Dijkstra.gif" class="displayLeft">
-        </div>
-
-        <div class="leftRightPair">
-            <div class="displayLeft textBlock">
-                <h3>Maze Generator</h3>
-                <p3>
-                    This program generates a maze that the user can then use the arrow keys to navigate the player (red) and reach the finish square (green).
-                    <br><br>
-                    The generation part of the program uses a recursive backtracking algorithm to create the maze, which can be viewed when "Show Maze Generation" is selected in the set up menu. 
-                    <br><br>
-                    <a href="ProgramRepos/Pygame-MazeGenerator/MazeGenerator.zip">Download for windows</a>
-                </p3>
-            </div>
-            <img src="Resources/Images/MazeGeneration.gif" class="displayRight">
-        </div>
-
-        <div class="leftRightPair">
-            <div class="displayRight textBlock">
-                <h3>Garden Defence</h3>
-                <p3>
-                    Garden Defence is my own tower defence strategy game where players place different gnomes into the garden to fight the attacking insects. 
-                    <br><br>
-                    Money is earned from killing enemies, and can be used to buy more gnomes or upgrade existing gnomes.               
-                    Upgrades can also be bought by clicking the existing gnome, clicking the upgrade arrow, and then choosing between increasing range or power.
-                    <br><br>
-                    <a href="ProgramRepos/Pygame-GardenDefence/GardenDefence.zip">Download for windows</a>
-                </p3>
-            </div>
-            <img src="Resources/Images/GardenDefence.png" class="displayLeft">
-        </div>
-
-        <div class="leftRightPair">
-            <div class="displayLeft textBlock">
-                <h3>This website!</h3>
-                <p3>
-                    I have updated this website throughout my programming journey, and have thoroughly enjoyed seeing my progress.
-                    <br/><br/>
-                    I am excited to see what projects I will complete in the future!
-                </p3>
-            </div>
-            <div class="displayRight" style="height: 300px">
-                <object type="text/html" data="index.html" width="1600" height="1200" style="overflow:hidden;border:0px ridge black; transform-origin: 100% -18%;transform: scale(0.25);">
-                </object>
-            </div>
-        </div>
-
-    </div>
-
-    <footer class="darkBackground">
-
-        <div class="footerLinks navLinkGroup">
-            <ul class="SiteLinks">
-                <li><a href="https://github.com/owenpauptit">Github Profile</a></li>
-                <li><a href="https://LinkedIn.com/in/owenpauptit">LinkedIn Profile</a></li>
-            </ul>
-
-        </div>
-
-    </footer>
-
-</body>
-</html>
