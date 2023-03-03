@@ -83,7 +83,6 @@ window.onload = function (){
         }
 
 
-
         canvas = document.getElementById("canvas");
         ctx = canvas.getContext("2d");
         document.addEventListener("mousemove",mouseMove)
@@ -95,7 +94,7 @@ window.onload = function (){
 
         for (var i = 0; i < points.length; i++)
         {
-            targets.push(new Vector(points[i][0]*window.innerWidth,points[i][1]*window.innerHeight));
+            targets.push(new Vector(points[i][0]*window.innerWidth,points[i][1]*window.innerWidth/2.2));
             //console.log(targets[i].x,targets[i].y);
 
             vehicles.push(new Vehicle(Math.random()*canvas.width,Math.random()*canvas.height));
