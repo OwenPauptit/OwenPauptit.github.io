@@ -8,9 +8,9 @@ class Ripple
         this.cols = Math.ceil(width/pixelSize)+2;
         this.rows = Math.ceil(height/pixelSize)+2;
         this.damping = 0.97;
-        console.log("Width,height: ", this.canvasWidth, this.canvasHeight);
-        console.log("psize ", this.pixelSize);
-        console.log("rows, cols ", this.rows,this.cols);
+        // console.log("Width,height: ", this.canvasWidth, this.canvasHeight);
+        // console.log("psize ", this.pixelSize);
+        // console.log("rows, cols ", this.rows,this.cols);
 
         this.current = [];
         this.previous = [];
