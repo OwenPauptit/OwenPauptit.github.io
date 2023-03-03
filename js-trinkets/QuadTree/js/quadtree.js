@@ -117,7 +117,7 @@ class Quadtree
         return this.points;
     }
 
-    insert = function(point)
+    insert = function(point, depth=1)
     {
         if(!this.boundary.contains(point))
         {
@@ -125,7 +125,7 @@ class Quadtree
             return false;
         }
         this.points.push(point);
-        if (this.points.length > this.capacity)
+        if (this.points.length > this.capacity && depth <= 8)
         {
             if (!this.divided)
             {
@@ -133,10 +133,10 @@ class Quadtree
             }
             for (let i = 0; i < this.points.length; i++)
             {
-                var a = this.northeast.insert(this.points[i]);
-                var b = this.southeast.insert(this.points[i]);
-                var c = this.northwest.insert(this.points[i]);
-                var d = this.southwest.insert(this.points[i]);
+                var a = this.northeast.insert(this.points[i],depth+1);
+                var b = this.southeast.insert(this.points[i],depth+1);
+                var c = this.northwest.insert(this.points[i],depth+1);
+                var d = this.southwest.insert(this.points[i],depth+1);
                 if (!(a || b || c || d))
                 {
                     return false;
