@@ -50,6 +50,49 @@ body
   transition: 200ms ease-in-out;
 }
 
+.physsim
+{
+  display: inline-block;
+  border: 3px solid #cfccc6;
+  border-radius: 5px;
+  color: #cfccc6;
+  width: 80%;
+  height:30%;
+  vertical-align: middle;
+  margin-left: 3%;
+  margin-top: 3%;
+  padding: 15px;
+  transition: 150ms ease-in-out;
+}
+
+.physsim img{
+  display: inline-block;
+}
+
+.physsim div{
+  display: inline-block;
+  width: 70%;
+  margin-left: 5%;
+}
+
+
+.physsim:hover{
+  border: 4px solid #d46c04;
+  transition: 200ms ease-in-out;
+  padding: 14px;
+}
+
+.physsim a{
+  text-decoration: underline;
+  color: #cfccc6;
+  transition: 100ms ease-in-out;
+}
+
+.physsim a:hover{
+  color: #d46c04;
+  transition: 200ms ease-in-out;
+}
+
 .project
 {
   display: inline-block;
