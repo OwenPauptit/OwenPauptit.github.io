@@ -70,6 +70,9 @@
 
   window.onload = function()
   {
+    if (window.innerWidth < 1000){
+      alert("You are viewing this website on a smaller device. For the best experience, view on a desktop or laptop.");
+    }
     setup()
     window.addEventListener("resize", resize)
   }
