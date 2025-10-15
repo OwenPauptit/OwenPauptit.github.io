@@ -1,9 +1,0 @@
-Wave number
-money
-health
-Num Towers
-#repeat for all towers:
-Tower type
-Tower pos
-Tower plevel
-Tower rlevel
